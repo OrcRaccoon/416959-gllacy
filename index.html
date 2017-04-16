@@ -98,37 +98,49 @@
 			</section>
 
 			<section class="hits">
-				<article class="hits-item">
+			<!-- Хиты продаж. Их article по моей логике должны быть идентичны артиклам из каталога + хит.img. Такая бизнес-логика позволит юзеру менять хиты продаж копипастой из каталога. Мы же знаем, что никакие это не хиты, а неходовой товар ;) -->
+				<article class="catalog-item">
 					<figure class="hit-item-img">
 						<img src="img/hit.png" alt="Хит" width="61" height="61">
 					</figure>
-					<img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="" height="">
-					<a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-					<span class="item-price">310 ₽/кг</span>
+					<figure class="catalog-item-img">			
+						<img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+					</figure>
+					<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+					<span class="item-price">310 &#8381;/<span class="small-letter">кг</span></span>
 				</article>
-				<article class="hits-item">
+
+				<article class="catalog-item">
 					<figure class="hit-item-img">
 						<img src="img/hit.png" alt="Хит" width="61" height="61">
 					</figure>
-					<img src="#" alt="Сливочно-кофейное с кусочками шоколада" width="" height="">
-					<a href="">Сливочно-кофейное с кусочками шоколада</a>
-					<span class="item-price">380 ₽/кг</span>
+					<figure class="catalog-item-img">			
+						<img src="#" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+					</figure>
+					<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+					<span class="item-price">380 &#8381;/<span class="small-letter">кг</span></span>
 				</article>
-				<article class="hits-item">
+
+				<article class="catalog-item">
 					<figure class="hit-item-img">
 						<img src="img/hit.png" alt="Хит" width="61" height="61">
 					</figure>
-					<img src="#" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="" height="">
-					<a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
-					<span class="item-price">355 ₽/кг</span>		
+					<figure class="catalog-item-img">			
+						<img src="#" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+					</figure>
+					<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+					<span class="item-price">355 &#8381;/<span class="small-letter">кг</span></span>
 				</article>
-				<article class="hits-item">
+
+				<article class="catalog-item">
 					<figure class="hit-item-img">
 						<img src="img/hit.png" alt="Хит" width="61" height="61">
 					</figure>
-					<img src="#" alt="Сливочное крем-брюле с карамельной подливкой" width="" height="">
-					<a href="">Сливочное крем-брюле с карамельной подливкой</a>
-					<span class="item-price">415 ₽/кг</span> 		
+					<figure class="catalog-item-img">			
+						<img src="#" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+					</figure>
+					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+					<span class="item-price">415 &#8381;/<span class="small-letter">кг</span></span>
 				</article>
 			</section>
 			<section class="advantages">
@@ -152,14 +164,16 @@
 					</div>
 				</div>
 			</section>
+			<!-- Блог и фидбэк -->
 			<section class="additional-options">
 				<div class="options blog">
-					<p class="blog-news-heading"></p>
-					<span class="blog-new-text"></span>
+					<p class="blog-news-heading">Новое в нашем блоге</p>
+					<!-- По логике дальше ссылка на статью блога, но в спецификацях, видимо, это не будет ссылкой, поэтому без href -->
+					<a><span class="blog-new-text">10 способов сервировки фруктовых щербетов к столу</span></a>
 				</div>
 
 				<div class="options mailout">
-					<p class="mailout-description"></p>
+					<p class="mailout-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 					<form action="https://echo.htmlacademy.ru" method="POST" class="mailout-form">
 						<input type="text" name="mailout" placeholder="Электронная почта">
 						<button type="submit" class="mailout-btn btn">Отправить</button>
