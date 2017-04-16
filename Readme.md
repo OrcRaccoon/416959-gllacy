@@ -1,4 +1,5 @@
 # Личный проект «Глейси»
+https://orcraccoon.github.io/416959-gllacy/
 
 * Студент: [Karina Udaltsova](https://up.htmlacademy.ru/htmlcss/17/user/416959).
 * Наставник: Ирина Малиновская.
