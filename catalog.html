@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог Глэйси</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="site-wrapper">
+		<div class="content-wrapper">
+			<header class="main-header">
+   			<div class="logo">
+   				<a href="index.html"><img src="img/logo.png" alt="Логотип Gllacy" width="154" height="64"></a>
+   			</div>
+   			<nav class="main-nav">
+   				<ul>
+   					<li><a href="">Каталог</a>
+   						<ul class="catalog-menu-list">
+   							<li class="scatalog-menu-item">Новинки</li>
+   							<li class="catalog-menu-item"><a href="catalog.html">Сливочное </a></li>
+   							<li class="catalog-menu-item">Щербеты</li>
+   							<li class="catalog-menu-item">Фруктовый лед</li>
+   							<li class="catalog-menu-item">Мелорин</li>
+   						</ul>
+   					</li>
+   					<li>Доставка и оплата</li>
+   					<li>О Компании</li>
+   				</ul>
+   			</nav>
+   			<div class="user-block">
+   				<div class="search">
+   					<img src="img/loop.png" alt="Поиск" width="17" height="17" class="search-img">
+   					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+   						<input type="search" name="search" id="search-form-id" placeholder="Что ищем?">
+   					</form>
+   				</div>
+   				<div class="login">
+   					<span><img src="img/enter.png" alt="Вход" width="21" height="19">Вход</span>
+   					<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+   						<input type="email" name="email" id="email" placeholder="Электронная почта">
+   						<input type="password" name="password" id="password" placeholder="Пароль">
+   						<button class="login-btn btn" type="submit">Войти</button>
+   						<a class="login-forgotten" href="#">Забыли пароль?</a>
+   						<a class="login-new" href="#">Новая регистрация</a>
+   					</form>
+   				</div>
+   				<div class="basket">
+   					<span><img src="img/basket.png" alt="Корзина" width="21" height="20">Пусто</span>
+   				</div>
+   			</div>
+   			<div class="contact-info">
+   				<span class="open-time">С 10 до 20, ежедневно
+   				</span><br>
+   				<span class="phone">8 812 450-25-25</span>
+   			</div>	
+   		</header>
+   		<main>
+   			<div class="breadcrumbs">
+   				<ul>
+   					<li><a href="index.html">Главная</a></li>
+   					<li><a href="catalog.html">Каталог</a></li>
+   					<li><span>Сливочное</span></li>
+   				</ul>
+   			</div>
+   			<!-- Фильтры -->
+   			<section class="filter">
+   				<h1>Сливочное мороженое</h1>
+   				<form action="https://echo.htmlacademy.ru" method="post" class="filter-form">
+
+   					<fieldset class="filter-item">
+   						<legend>Сортировка</legend>
+   						<div class="filter-field filter-popular-width">
+   							<select>
+   								<option>по популярности</option>
+   								<option>сначала недорогие</option>
+   								<option>сначала дорогие</option>
+   								<option>по жирности</option>
+   							</select>
+   						</div>
+   					</fieldset>
+
+   					<fieldset class="filter-item">
+   						<legend>Цена: 100 руб. - 500 руб.</legend>
+   						<div class="filter-field filter-price-width">
+   							<div class="price-line"></div>
+   							<div class="toggle toggle-left"></div>
+   							<div class="toggle toggle-right"></div>
+   						</div>
+   					</fieldset>
+
+   					<fieldset class="filter-item">
+   						<legend>Жирность:</legend>
+   						<div class="filter-field filter-fat-width">
+   							<p>
+   								<input id="button1" type="radio" name="fat" value="0%">
+   								<label for="button1">0%</label>
+   							</p>
+   							<p>
+   								<input id="button2" type="radio" name="fat" value="до 10%" checked>
+   								<label for="button2">до 10%</label>
+   							</p>
+   							<p>
+   								<input id="button3" type="radio" name="fat" value="до 30%">
+   								<label for="button3">до 30%</label>
+   							</p>
+   							<p>
+   								<input id="button4" type="radio" name="fat" value="выше 30%">
+   								<label for="button4">выше 30%</label>
+   							</p>
+   						</div>
+   					</fieldset>
+
+   					<fieldset class="filter-item">
+   						<legend>Наполнители:</legend>
+   						<div class="filter-field filter-extra-width">
+   							<p>
+   								<input id="square1" type="checkbox" name="шоколадные" checked>
+   								<label for="square1">шоколадные</label>
+   							</p>
+   							<p>
+   								<input id="square2" type="checkbox" name="сахарные присыпки" checked>
+   								<label for="square2">сахарные присыпки</label>
+   							</p>
+   							<p>
+   								<input id="square3" type="checkbox" name="фрукты">
+   								<label for="square3">фрукты</label>
+   							</p>
+   							<p>
+   								<input id="square4" type="checkbox" name="сиропы">
+   								<label for="square4">сиропы</label>
+   							</p>
+   							<p>
+   								<input id="square5" type="checkbox" name="джемы">
+   								<label for="square5">джемы</label>
+   							</p>
+   						</div>
+   					</fieldset>
+   					<button class="filter-btn btn" type="submit">Применить</button>
+   				</form>
+   			</section>
+		   	<!-- Сам каталог -->
+		   	<section class="catalog">
+		   		<article class="catalog-item">
+
+		   			<figure class="catalog-item-img">			
+		   				<img src="img/ice-orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+		   			</figure>
+		   			<a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+		   			<span class="item-price">310 ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+
+		   		<article class="catalog-item">
+		   			<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+
+		   		<article class="catalog-item">
+		   			<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+
+		   		<article class="catalog-item">
+		   			<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+
+		   		<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+
+		   		<article class="catalog-item">
+		   			<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+
+		   		<article class="catalog-item">
+		   			<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+		   		
+		   		<article class="catalog-item">
+		   			<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+
+		   		<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+
+		   		<article class="catalog-item">
+		   			<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+
+		   		<article class="catalog-item">
+		   			<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+		   		
+		   		<article class="catalog-item">
+		   			<figure class="catalog-item-img">			
+		   				<img src="" alt="" width="267" height="267">
+		   			</figure>
+		   			<a href=""></a>
+		   			<span class="item-price"> ₽/<span class="small-letter">кг</span></span>
+		   		</article>
+		   	</section>
+   		</main>
+		</div>
+	</div>
+</body>
+</html>
