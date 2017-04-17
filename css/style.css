@@ -1,35 +1,58 @@
 html,
 body {
-	background-color: black;
 	padding: 0;
 	margin: 0;
-	color: white;
 }
-
+body {
+	color: white;
+	font-family: "Roboto", "Arial",  sans-serif;
+}
 .site-wrapper {
 	min-width: 1200px;
-	min-height: 1000px; 
+	min-height: 100px; 
 
-	background-color: #6c6c6c;
+	background-image: url("../img/bg-ice.png");
+	background-color: rgb(132, 157, 143);
 	background-position: top center;
 	background-repeat: no-repeat;
 }
 .content-wrapper {
-	/*Мин-высота для наглядности*/
-	min-height: 100px;
 	width: 1146px;
 	padding-right: 27px;
 	padding-left: 27px;
 	margin: 0 auto; 
-	
-	background-color: #849d8f;	
+		
 }
 .main-header {
 	width: auto;
-
-	background-color: #8996a6;
+}
+.btn {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  opacity: 0.988;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
 }
 
+.offer {
+	width: 560px;
+	border-radius: 15px;
+	min-height: 230px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+
+}
+.offer-left {
+	background-image: url(../img/bg-raspberry.jpg);
+}
+.offer-right {
+	background-image: url(../img/bg-chocolate.jpg);
+}
 iframe {
 	width: 100%;
 	border: 0;
