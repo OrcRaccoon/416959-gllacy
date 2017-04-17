@@ -37,7 +37,21 @@ body {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	color: white;
 }
-
+.user-block span {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+}
+.open-time {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.phone {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+}
 .btn {
   background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -48,12 +62,14 @@ body {
   cursor: pointer;
   border-radius: 50px;
   text-align: center;
+  color: white;
 }
+
 .slide-title {
-	color: white;
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 60px;
+	color: white;
 }
 .offer {
 	width: 560px;
@@ -66,11 +82,20 @@ body {
 .offer-heading {
 	font-size: 35px;
 	font-weight: 700;
+	line-height: 41px;
 }
 .offer-text {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 22px;
+}
+.offer-btn {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	width: 165px;
+	height: 46px;
 }
 
 .offer-left {
@@ -93,7 +118,23 @@ article {
 	font-weight: 500;
 	line-height: 22px;
 }
-
+.catalog-item a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.item-price {
+	text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+	font-weight: 700;
+	line-height: 45px;
+	font-size: 45px;
+}
+.small-letter {
+	font-size: 30px;
+}
 .advantages {
 	background-image: url(../img/bg-waff.jpg);
 	border-radius: 15px;
