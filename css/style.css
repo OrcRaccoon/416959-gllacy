@@ -1,3 +1,4 @@
+/*На весь сайт*/
 html,
 body {
 	padding: 0;
@@ -10,6 +11,19 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+.btn {
+	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	opacity: 0.988;
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 50px;
+	text-align: center;
+	color: white;
 }
 
 .site-wrapper {
@@ -26,8 +40,13 @@ a {
 	padding-right: 27px;
 	padding-left: 27px;
 	margin: 0 auto; 
-
 }
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear:  both;
+}
+/*Шапка*/
 .main-header {
 	width: auto;
 }
@@ -65,7 +84,7 @@ a {
 	line-height: 16px;
 	border-bottom: 1px solid rgba(209, 208, 206, 0.2);
 }
-
+/*Правая часть шапки*/
 .user-block span {
 	font-size: 14px;
 	font-weight: 500;
@@ -129,25 +148,13 @@ a {
 	line-height: 24px;
 }
 
-.btn {
-	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	opacity: 0.988;
-	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-	text-decoration: none;
-	cursor: pointer;
-	border-radius: 50px;
-	text-align: center;
-	color: white;
-}
-
 .slide-title {
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 60px;
 	color: white;
 }
+/*баннеры*/
 .offer {
 	width: 560px;
 	border-radius: 15px;
@@ -183,6 +190,7 @@ a {
 	float: right;
 	background-image: url(../img/bg-chocolate.jpg);
 }
+/*карточки товаров*/
 .hits {
 	font-size: 0px;
 	margin-left: 0px;
@@ -211,6 +219,7 @@ article {
 .small-letter {
 	font-size: 30px;
 }
+/*самопиар*/
 .advantages {
 	background-image: url(../img/bg-waff.jpg);
 	border-radius: 15px;
@@ -288,19 +297,79 @@ line-height: 24px;
 
  padding-left: 10px;
 }
-iframe {
-	width: 100%;
-	border: 0;
-	min-height: 429px;
-}
+
 .feedback-wrapper {
 	width: 1200px;
 	margin: 0 auto; 
 }
+/*карта*/
+.map {
+	background-image: url(../img/map-pin.jpg);
+	background-repeat: no-repeat;
+	border: 0px; 
 
-.clearfix:after {
-	content: " ";
-	display: table;
-	clear:  both;
+	width: 1200px;
+	min-height: 430px;
+}
+iframe {
+	width: 100%;
+	border: 0;
+	min-height: 430px;
+}
+.feedback-contacts {
+	width: 302px;
+	min-height: 305px;
+	background-color: rgba(255, 255, 255, 0.98);
+	border-radius: 15px;
+	color: rgb(50, 50, 50);
+}
+.feedback-contacts p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.feedback-contacts b {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+.feedback-form-modal {
+	width: 477px;
+	height: 442px;
+	background-color: rgb(248, 247, 244);
+	border-radius: 10px;
+	color: rgb(50, 50, 50);
+}
+.feedback-form-modal span {
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28px;
+}
+.feedback-form-modal input {
+	width: 267px;
+	min-height: 44px;
+	background-color: white;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
+}
+.feedback-form-modal input::placeholder {
+	color: rgb(153, 153, 153);
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.feedback-form-modal textarea {
+	width: 428px;
+	min-height: 155px;
+	background-color: white;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
 
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: rgb(153, 153, 153);
 }
