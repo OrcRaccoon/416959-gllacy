@@ -224,12 +224,22 @@ article {
 	background-image: url(../img/bg-waff.jpg);
 	border-radius: 15px;
 	min-height: 306px;
+/*для инлайн-блоков*/
+	font-size: 0px;
 
 	color: rgb(50, 50, 50);
 }
+.advantages-item {
+	display: inline-block;
+	vertical-align: top;
+	/*размеры на глаз, проверить*/
+	width: 500px;
+	padding-left: 20px;
+
+}
 .advantages-heading {
 	font-size: 24px;
-	font-weight: 500;
+	font-weight: 543px;
 	line-height: 30px;
 }
 .advantages-item p {
