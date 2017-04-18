@@ -7,6 +7,10 @@ body {
 	color: white;
 	font-family: "Roboto", "Arial",  sans-serif;
 }
+
+a {
+	text-decoration: none;
+}
 .site-wrapper {
 	min-width: 1200px;
 	min-height: 100px; 
@@ -35,14 +39,50 @@ body {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
-	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	color: white;
 }
+.catalog-menu-list {
+width: 200px;
+min-height: 171px;
+background-color: rgb(248, 247, 244);
+border-radius: 5px;
+box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-menu-item {
+color: rgb(50, 50, 50);
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+}
+
+.catalog-menu-item:first-child {
+	color: rgb(50, 50, 50);
+font-size: 14px;
+font-weight: 700;
+line-height: 16px;
+border-bottom: 1px solid rgba(209, 208, 206, 0.2);
+}
+
 .user-block span {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
+}
+.search-form {
+	width: 341px;
+min-height: 84px;
+background-color: rgb(248, 247, 244);
+border-radius: 5px;
+box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+.search-form input {
+	width: 311px;
+height: 44px;
+background-color: white;
+border: 1px solid rgb(211, 211, 210);
+border-radius: 5px;
 }
 .open-time {
 	font-size: 14px;
@@ -121,7 +161,6 @@ article {
 	line-height: 22px;
 }
 .catalog-item a {
-	text-decoration: none;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px;
