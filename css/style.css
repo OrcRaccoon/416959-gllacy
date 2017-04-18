@@ -230,25 +230,31 @@ line-height: 22px;
 }
 
 .options {
-	min-height: 210px;
+	min-height: 220px;
 	width: 560px;
 	background-color: rgb(248, 247, 244);
-	border-radius: 10px;
+	border-radius: 15px;
 }
 
 .blog {
 	float: left;
 	color: rgb(50, 50, 50);
+	background-image: url(../img/bg-straw.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
 }
+.blog a {
+text-decoration: underline;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
 .blog-news-heading {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px;
-}
-.blog-new-text {
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 30px;
 }
 
 
