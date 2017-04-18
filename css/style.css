@@ -140,6 +140,12 @@ article {
 	border-radius: 15px;
 	min-height: 306px;
 }
+.advantages-heading {
+	color: rgb(50, 50, 50);
+font-size: 24px;
+font-weight: 500;
+line-height: 30px;
+}
 iframe {
 	width: 100%;
 	border: 0;
