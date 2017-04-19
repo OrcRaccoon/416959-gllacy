@@ -24,6 +24,8 @@ a {
 	border-radius: 50px;
 	text-align: center;
 	color: white;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .site-wrapper {
@@ -174,7 +176,6 @@ a {
 	line-height: 22px;
 }
 .offer-btn {
-	display: inline-block;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
