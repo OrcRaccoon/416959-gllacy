@@ -448,19 +448,31 @@ line-height: 16px;
 	text-align: center;
 }
 select {
-		width: 193px;
+	width: 193px;
 	height: 36px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 25px;
 	border: none;
+
 	background-color: inherit;
+	background-image: url();
 	color: white;
 	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
+
+	/*скрыть стрелку for firefox*/
+	-moz-appearance: none;
+	/*for chrome*/
+	-webkit-appearance: none;
 }
+/*скрыть стрелку for IE10*/
+select::-ms-expand {
+    display: none;
+}
+
 select:hover {
 	background-color: white;
 	color: black;
@@ -469,7 +481,7 @@ select:hover {
 	position: relative;
 	width: 218px;
 	padding-top: 17px;
-	    box-sizing: border-box;
+	box-sizing: border-box;
     min-height: 36px;
 }
 .price-line-full {
