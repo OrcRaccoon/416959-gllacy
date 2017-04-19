@@ -502,3 +502,22 @@ select:hover {
 .toggle-right {
 	right: 55px;
 }
+.filter-fat-width {
+	width: 415px;
+}
+.filter-fat-width p {
+	display: inline-block;
+}
+.filter-extra-width {
+	width: 702px;
+}
+.filter-extra-width p {
+	display: inline-block;
+}
+.filter-btn {
+	width: 144px;
+height: 36px;
+background-color: rgba(255, 255, 255, 0.19);
+border: 2px solid white;
+border-radius: 25px;
+}
