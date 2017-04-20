@@ -101,27 +101,32 @@ p {
 
 }
 .search {
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    padding: 8px;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	width: 17px;
+	height: 17px;
+	padding: 8px;
 }
 
-.loop {
-display: inline-block;
-    width: 17px;
-    height: 17px;
-	background: url('../img/sprite.png') no-repeat; 
-	background-position: -91px -217px; width: 17px; height: 17px;
+.loop
+{
+	display: inline-block;
+
+	width: 17px;
+	height: 17px;
+
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -91px -217px;
 }
 
-.user-block span {
+.user-block span
+{
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
 }
+
 
 .user-block form {
 	background-color: rgb(248, 247, 244);
@@ -142,10 +147,10 @@ display: inline-block;
 
 .search-form {
 	width: 311px;
-	    padding-right: 15px;
-	    padding-left: 15px;
-	    padding-top: 20px;
-	    padding-bottom: 20px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .search-form input {
 	width: 311px;
@@ -199,7 +204,7 @@ display: inline-block;
 }
 /*баннеры*/
 .offer h3 {
-margin: 0;
+	margin: 0;
 }
 .offer {
 	width: 560px;
@@ -208,6 +213,7 @@ margin: 0;
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
+	
 	box-sizing: border-box;
 	padding-left: 20px;
 	padding-top: 20px;
@@ -251,7 +257,7 @@ article {
 	vertical-align: top;
 	width: 267px;
 
-padding-right: 26px;
+	padding-right: 26px;
 
 	font-size: 16px;
 	font-weight: 500;
@@ -286,7 +292,7 @@ article:nth-child(4n) {
 	background-image: url(../img/bg-waff.jpg);
 	border-radius: 15px;
 	min-height: 306px;
-/*для инлайн-блоков*/
+	/*для инлайн-блоков*/
 	font-size: 0px;
 
 	color: rgb(50, 50, 50);
@@ -383,14 +389,14 @@ article:nth-child(4n) {
 }
 .blog {
 	float: left;
-padding-top: 26px;
-padding-left: 20px;
+	padding-top: 26px;
+	padding-left: 20px;
 
 	color: rgb(50, 50, 50);
 	background-image: url(../img/bg-straw.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
-background-size: cover;
+	background-size: cover;
 }
 .blog-news-heading {
 	font-size: 16px;
@@ -403,7 +409,7 @@ background-size: cover;
 	width: 300px;
 }
 .blog a {
-text-decoration: underline;
+	text-decoration: underline;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 30px;
@@ -422,22 +428,22 @@ text-decoration: underline;
 	margin-bottom: 10px;
 }
 .mailout-form input {
-width: 368px;
-min-height: 44px;
+	width: 368px;
+	min-height: 44px;
 
-background-color: white;
-border: 1px solid rgba(178, 178, 178, 0.52);
-border-radius: 5px;
+	background-color: white;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
 }
 
 .mailout-form input::placeholder {
-  color: rgb(153, 153, 153);
-font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
+	color: rgb(153, 153, 153);
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 
- padding-left: 10px;
+	padding-left: 10px;
 }
 
 .feedback-wrapper {
@@ -517,7 +523,7 @@ iframe {
 }
 /*footer*/
 .footer-social a {
-display: inline-block;
+	display: inline-block;
 }
 .twitter {
 	background: url('../img/sprite.png') no-repeat;
@@ -536,32 +542,32 @@ display: inline-block;
 	background-position: -48px -303px; width: 38px; height: 38px;
 }
 .insta:hover {
-background: url('../img/sprite.png') no-repeat;
-background-position: -5px -303px; width: 38px; height: 38px;
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -5px -303px; width: 38px; height: 38px;
 }
 .insta:active {
-background: url('../img/sprite.png') no-repeat;
-background-position: -48px -260px; width: 38px; height: 38px;
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -48px -260px; width: 38px; height: 38px;
 }
 .facebook {
 	background: url('../img/sprite.png') no-repeat;
 	background-position: -5px -260px; width: 38px; height: 38px;
 }
 .facebook:hover {
-background: url('../img/sprite.png') no-repeat;
-background-position: -48px -217px; width: 38px; height: 38px;
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -48px -217px; width: 38px; height: 38px;
 }
 .facebook:active {
-background: url('../img/sprite.png') no-repeat;
-background-position: -5px -217px; width: 38px; height: 38px;
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -5px -217px; width: 38px; height: 38px;
 }
 .vk {
 	background: url('../img/sprite.png') no-repeat;
 	background-position: -48px -432px; width: 38px; height: 38px;
 }
 .vk:hover {
-background: url('../img/sprite.png') no-repeat;
-background-position: -5px -432px; width: 38px; height: 38px;
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -5px -432px; width: 38px; height: 38px;
 }
 .vk:active {
 	background: url('../img/sprite.png') no-repeat;
@@ -598,8 +604,8 @@ background-position: -5px -432px; width: 38px; height: 38px;
 }
 .filter-item legend {
 	font-size: 14px;
-font-weight: 500;
-line-height: 16px;
+	font-weight: 500;
+	line-height: 16px;
 }
 .filter-field {
 	min-height: 36px;
@@ -633,7 +639,7 @@ select {
 }
 /*скрыть стрелку for IE10*/
 select::-ms-expand {
-    display: none;
+	display: none;
 }
 
 select:hover {
@@ -645,19 +651,21 @@ select:hover {
 	width: 218px;
 	padding-top: 17px;
 	box-sizing: border-box;
-    min-height: 36px;
+	min-height: 36px;
 }
 .price-line-full {
+	width: 188px;
+	height: 4px;
+	margin: 0 auto;
+
 	background-color: #d1d9d2;
-	    width: 188px;
-    height: 4px;
-    margin: 0 auto;
 }
 .price-line {
 	width: 107px;
-    height: inherit;
-    background-color: rgb(248, 247, 244);
-    margin-left: 30px;
+	height: inherit;
+	margin-left: 30px;
+
+	background-color: rgb(248, 247, 244);
 }
 .toggle {
 	position: absolute;
@@ -666,10 +674,11 @@ select:hover {
 	width: 20px;
 	height: 20px;
 
+	cursor: pointer;
+
+	border-radius: 100%;
 	background-color: rgb(248, 247, 244);
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-	border-radius: 100%;
-	cursor: pointer;
 }
 .toggle-left {
 	left: 35px;
@@ -689,10 +698,12 @@ select:hover {
 .filter-extra-width p {
 	display: inline-block;
 }
-.filter-btn {
+.filter-btn
+{
 	width: 144px;
-height: 36px;
-background-color: rgba(255, 255, 255, 0.19);
-border: 2px solid white;
-border-radius: 25px;
+	height: 36px;
+
+	border: 2px solid white;
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, .19);
 }
