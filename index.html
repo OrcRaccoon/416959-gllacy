@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Icecream shop "Gllacy"</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
 </head>
@@ -17,10 +18,10 @@
    	<div class="content-wrapper">
    		<!-- Header start -->
    		<header class="main-header">
-   			<div class="logo">
-   				<img src="img/logo.png" alt="Логотип Gllacy" width="154" height="64">
-   			</div>
    			<nav class="main-nav">
+   				<div class="logo">
+   					<img src="img/logo.png" alt="Логотип Gllacy" width="154" height="64">
+   				</div>   
    				<ul>
    					<li class="main-nav-item"><a href="">Каталог</a>
    						<ul class="catalog-menu-list">
@@ -37,7 +38,7 @@
    			</nav>
    			<div class="user-block">
    				<div class="search">
-   					<img src="img/loop.png" alt="Поиск" width="17" height="17" class="search-img">
+   					<div class="loop"></div>
    					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
    						<input type="search" name="search" id="search-form-id" placeholder="Что ищем?">
    					</form>
@@ -141,11 +142,9 @@
 			</section>
 
 			<section class="hits">
-			<!-- Хиты продаж. Их article по моей логике должны быть идентичны артиклам из каталога + хит.img. Такая бизнес-логика позволит юзеру менять хиты продаж копипастой из каталога. Мы же знаем, что никакие это не хиты, а неходовой товар ;) -->
+			<!-- Хиты продаж.-->
 				<article class="catalog-item">
-					<figure class="hit-item-img">
-						<img src="img/hit.png" alt="Хит" width="61" height="61">
-					</figure>
+					<div class="hit-img"></div>
 					<figure class="catalog-item-img">
 						<img src="img/ice-orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
 					</figure>
@@ -154,9 +153,7 @@
 				</article>
 
 				<article class="catalog-item">
-					<figure class="hit-item-img">
-						<img src="img/hit.png" alt="Хит" width="61" height="61">
-					</figure>
+					<div class="hit-img"></div>
 					<figure class="catalog-item-img">			
 						<img src="img/ice-coffee.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
 					</figure>
@@ -165,9 +162,7 @@
 				</article>
 
 				<article class="catalog-item">
-					<figure class="hit-item-img">
-						<img src="img/hit.png" alt="Хит" width="61" height="61">
-					</figure>
+					<div class="hit-img"></div>
 					<figure class="catalog-item-img">		
 						<img src="img/ice-straw.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
 					</figure>
@@ -176,9 +171,7 @@
 				</article>
 
 				<article class="catalog-item">
-					<figure class="hit-item-img">
-						<img src="img/hit.png" alt="Хит" width="61" height="61">
-					</figure>
+					<div class="hit-img"></div>
 					<figure class="catalog-item-img">			
 						<img src="img/ice-caram.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
 					</figure>
@@ -189,20 +182,21 @@
 			<section class="advantages">
 				<div class="advantages-wrapper">
 					<h2 class="advantages-heading">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-					<div class="advantages-item">
-						<img src="img/icecream.png" alt="Мороженое" width="49" height="49">
+					<div class="advantages-item clearfix">
+						<div class="icecream"></div>
 						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 					</div>
 					<div class="advantages-item">
-						<img src="img/leaf.png" alt="Экологичное" width="49" height="49">
-						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-					</div>
-					<div class="advantages-item">
-						<img src="img/cow.png" alt="Фермерское" width="49" height="49">
+						<div class="cow"></div>
 						<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
 					</div>
 					<div class="advantages-item">
-						<img src="img/temperature.png" alt="Температурный режим" width="49" height="49">
+						<div class="leaf"></div>
+						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+					</div>
+					
+					<div class="advantages-item">
+						<div class="temperature"></div>
 						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 					</div>
 				</div>
@@ -212,18 +206,17 @@
 				<div class="options blog">
 					<p class="blog-news-heading">Новое в нашем блоге</p>
 					<!-- По бизнес-логике тут должна быть ссылка, но по макету нет, поэтому а без href -->
-					<a>10 способов сервировки фруктовых щербетов к столу</a>
+					<a><span class="blog-news-link">10 способов сервировки фруктовых щербетов к столу</span></a>
 				</div>
 
 				<div class="options mailout">
-					<div class="mailout-content">
 					<p class="mailout-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-						<form action="https://echo.htmlacademy.ru" method="POST" class="mailout-form">
-							<input type="text" name="mailout" placeholder="Электронная почта">
-							<button type="submit" class="mailout-btn btn">Отправить</button>
-						</form>
-					</div>
+					<form action="https://echo.htmlacademy.ru" method="POST" class="mailout-form">
+						<input type="text" name="mailout" placeholder="Электронная почта">
+						<button type="submit" class="mailout-btn btn">Отправить</button>
+					</form>
 				</div>
+				
 			</section>
 		</main>
 	</div>
@@ -256,13 +249,17 @@
 	<footer class="content-wrapper">
 		<section class="footer-social">
 			<!-- Тут видимо магия либо с иконочным фрифтом, либо со спрайтами, но для меня это пока слишком сильное колдунство, поэтому копирую из демки барбершопа, но с img -->
-			<a class="social-btn social-btn-twit" href="#"><img src="img/twitter.png" alt="Twitter" width="32" height="32">
+			<a class="social-btn" href="#">
+				<div class="twitter"></div>
 			</a>
-			<a class="social-btn social-btn-inst" href="#"><img src="img/instag.png" alt="Instagram" width="32" height="32">
+			<a class="social-btn" href="#">
+				<div class="insta"></div>
 			</a>
-			<a class="social-btn social-btn-fb" href="#"><img src="img/fb.png" alt="Facebook" width="32" height="32">
+			<a class="social-btn" href="#">
+				<div class="facebook"></div>
 			</a>
-			<a class="social-btn social-btn-vk" href="#"><img src="img/vk.png" alt="VKontakte" width="32" height="32">
+			<a class="social-btn" href="#">
+				<div class="vk"></div>			
 			</a>
 		</section>
 		<section class="footer-docs">
