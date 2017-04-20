@@ -271,8 +271,8 @@ article {
 	display: inline-block;
 
 	width: 267px;
-	padding-right: 26px;
 	margin-bottom: 40px;
+	padding-right: 26px;
 
 	font-size: 16px;
 	font-weight: 500;
@@ -286,6 +286,7 @@ article:nth-child(4n) {
 }
 .hit-img {
 	position: absolute;
+
 	width: 61px;
 	height: 61px;
 
@@ -309,7 +310,8 @@ article:nth-child(4n) {
 .item-price {
 	position: absolute;
 	top: 209px;
-    left: 0px;
+	left: 0;
+
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 45px;
