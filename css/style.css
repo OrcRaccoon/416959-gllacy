@@ -449,17 +449,49 @@ iframe {
 	background: url('../img/sprite.png') no-repeat;
 	background-position: -5px -389px; width: 38px; height: 38px;
 }
+.twitter:hover {
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -48px -346px; width: 38px; height: 38px;
+}
+.twitter:active {
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -5px -346px; width: 38px; height: 38px;
+}
 .insta {
 	background: url('../img/sprite.png') no-repeat;
 	background-position: -48px -303px; width: 38px; height: 38px;
+}
+.insta:hover {
+background: url('../img/sprite.png') no-repeat;
+background-position: -5px -303px; width: 38px; height: 38px;
+}
+.insta:active {
+background: url('../img/sprite.png') no-repeat;
+background-position: -48px -260px; width: 38px; height: 38px;
 }
 .facebook {
 	background: url('../img/sprite.png') no-repeat;
 	background-position: -5px -260px; width: 38px; height: 38px;
 }
+.facebook:hover {
+background: url('../img/sprite.png') no-repeat;
+background-position: -48px -217px; width: 38px; height: 38px;
+}
+.facebook:active {
+background: url('../img/sprite.png') no-repeat;
+background-position: -5px -217px; width: 38px; height: 38px;
+}
 .vk {
 	background: url('../img/sprite.png') no-repeat;
 	background-position: -48px -432px; width: 38px; height: 38px;
+}
+.vk:hover {
+background: url('../img/sprite.png') no-repeat;
+background-position: -5px -432px; width: 38px; height: 38px;
+}
+.vk:active {
+	background: url('../img/sprite.png') no-repeat;
+	background-position: -48px -389px; width: 38px; height: 38px;
 }
 /*catalog.html*/
 .breadcrumbs {
