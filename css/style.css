@@ -211,6 +211,9 @@ p {
 	color: white;
 }
 /*баннеры*/
+.main-offers {
+	margin-bottom: 40px;
+}
 .offer h3 {
 	margin: 0;
 }
@@ -257,7 +260,7 @@ p {
 
 	background-image: url(../img/bg-chocolate.jpg);
 }
-/*карточки товаров*/
+/*карточки товаров, почти попиксельно*/
 .hits {
 	font-size: 0;
 }
@@ -269,6 +272,7 @@ article {
 
 	width: 267px;
 	padding-right: 26px;
+	margin-bottom: 40px;
 
 	font-size: 16px;
 	font-weight: 500;
@@ -281,11 +285,15 @@ article:nth-child(4n) {
 	padding-right: 0;
 }
 .hit-img {
+	position: absolute;
 	width: 61px;
 	height: 61px;
 
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -5px -43px;
+}
+.catalog-item {
+	position: relative;
 }
 .catalog-item a {
 	font-size: 16px;
@@ -295,7 +303,13 @@ article:nth-child(4n) {
 	color: white;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.catalog-item-img {
+	margin-bottom: 7px;
+}
 .item-price {
+	position: absolute;
+	top: 209px;
+    left: 0px;
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 45px;
