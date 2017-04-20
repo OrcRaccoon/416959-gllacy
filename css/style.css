@@ -49,7 +49,7 @@ p {
 }
 .content-wrapper {
 	width: 1146px;
-	margin: 0 auto; 
+	margin: 0 auto;
 	padding-right: 27px;
 	padding-left: 27px;
 }
@@ -65,7 +65,7 @@ p {
 	padding-top: 7px;
 }
 .main-nav ul {
-	margin: 0; 
+	margin: 0;
 	padding: 0;
 
 	list-style-type: none;
@@ -227,11 +227,11 @@ p {
 	background-size: cover;
 }
 .offer .offer-heading {
+	margin-bottom: 20px;
+
 	font-size: 35px;
 	font-weight: 700;
 	line-height: 41px;
-
-	margin-bottom: 20px;
 }
 .offer-text {
 	font-size: 18px;
@@ -239,12 +239,12 @@ p {
 	line-height: 22px;
 }
 .offer-btn {
+	width: 165px;
+	height: 46px;
+
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
-
-	width: 165px;
-	height: 46px;
 }
 
 .offer-left {
@@ -265,14 +265,14 @@ p {
 	font-size: 0;
 }
 article {
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 22px;
-
 	display: inline-block;
 
 	width: 267px;
 	padding-right: 26px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
 
 	text-align: center;
 	vertical-align: top;
@@ -282,7 +282,7 @@ article:nth-child(4n) {
 }
 .hit-img {
 	width: 61px;
-	height: 61px; 
+	height: 61px;
 
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -5px -43px;
@@ -307,11 +307,11 @@ article:nth-child(4n) {
 }
 /*самопиар*/
 .advantages {
-	/*для инлайн-блоков*/
-	font-size: 0;
-
 	min-height: 306px;
 	margin-bottom: 40px;
+	/*для инлайн-блоков*/
+
+	font-size: 0;
 
 	color: rgb(50, 50, 50);
 	border-radius: 15px;
@@ -324,14 +324,14 @@ article:nth-child(4n) {
 	padding-left: 20px;
 }
 .advantages-heading {
-	font-size: 24px;
-	font-weight: 543px;
-	line-height: 30px;
-
 	display: inline-block;
 
 	margin: 0;
 	margin-bottom: 10px;
+
+	font-size: 24px;
+	font-weight: 543px;
+	line-height: 30px;
 
 	vertical-align: top;
 }
@@ -356,7 +356,7 @@ article:nth-child(4n) {
 	float: left;
 
 	width: 49px;
-	height: 49px; 
+	height: 49px;
 
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -5px -109px;
@@ -366,7 +366,7 @@ article:nth-child(4n) {
 	float: left;
 
 	width: 49px;
-	height: 49px; 
+	height: 49px;
 
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -5px -163px;
@@ -376,7 +376,7 @@ article:nth-child(4n) {
 	float: left;
 
 	width: 49px;
-	height: 49px; 
+	height: 49px;
 
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -59px -109px;
@@ -392,16 +392,16 @@ article:nth-child(4n) {
 	background-position: -58px -163px;
 }
 .advantages-item p {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 22px;
-
 	display: block;
 	float: right;
 
 	width: 476px;
 	margin-top: 16px;
 	margin-left: 7px;
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
 }
 
 .additional-options {
@@ -470,12 +470,12 @@ article:nth-child(4n) {
 }
 
 .mailout-form input::placeholder {
+	padding-left: 10px;
+
 	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-
-	padding-left: 10px;
 
 	color: rgb(153, 153, 153);
 }
@@ -548,13 +548,13 @@ iframe {
 	color: rgb(153, 153, 153);
 }
 .feedback-form-modal textarea {
+	width: 428px;
+	min-height: 155px;
+
 	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-
-	width: 428px;
-	min-height: 155px;
 
 	color: rgb(153, 153, 153);
 	border: 1px solid rgba(178, 178, 178, 0.52);
@@ -692,15 +692,15 @@ iframe {
 	text-align: center;
 }
 select {
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 18px;
-
 	width: 193px;
 	height: 36px;
 	padding-right: 10px;
 	padding-left: 10px;
+
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
 
 	color: white;
 	border: none;
