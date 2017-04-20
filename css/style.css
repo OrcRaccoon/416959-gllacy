@@ -19,6 +19,7 @@ a {
 p {
 	margin: 0;
 }
+
 .btn {
 	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -140,29 +141,35 @@ display: inline-block;
 }
 
 .search-form {
-	width: 312px;
+	width: 311px;
 	    padding-right: 15px;
 	    padding-left: 15px;
 	    padding-top: 20px;
 	    padding-bottom: 20px;
 }
 .search-form input {
-	width: 312px;
+	width: 311px;
 	height: 44px;	
 }
 .search-form input[placeholder] {
-	padding: 10px;
+	padding-left: 13px;
 }
 .login-form {
-	width: 277px;
+	width: 241px;
 	min-height: 214px;
+	padding-right: 17px;
+	padding-left: 17px;
+	padding-top: 20px;
 }
 
 .login-form input {
-	width: 241px;
-	min-height: 44px;
+	width: 228px;
+	height: 44px;
+	margin-bottom: 20px;
 }
-
+.login-form input[placeholder] {
+	padding-left: 13px;
+}
 .login-form a {
 	color: rgb(50, 50, 50);
 	font-family: Roboto;
