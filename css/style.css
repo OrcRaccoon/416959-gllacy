@@ -8,12 +8,17 @@ body {
 	color: white;
 	font-family: "Roboto", "Arial",  sans-serif;
 }
-
+figure {
+	margin: 0px;
+}
 a {
 	text-decoration: none;
 	color: white;
 }
 
+p {
+	margin: 0;
+}
 .btn {
 	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -216,13 +221,7 @@ padding-right: 26px;
 article:nth-child(4n) {
 	padding-right: 0px;
 }
-/*figure {
-    display: block;
-    -webkit-margin-before: 0px;
-    -webkit-margin-after: 0px;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-}*/
+
 .catalog-item a {
 	font-size: 16px;
 	font-weight: 500;
@@ -249,24 +248,50 @@ article:nth-child(4n) {
 
 	color: rgb(50, 50, 50);
 }
-.advantages-item {
-	display: inline-block;
-	vertical-align: top;
-	/*размеры на глаз, проверить*/
-	width: 500px;
+.advantages-wrapper {
 	padding-left: 20px;
-
+	padding-right: 20px;
+	padding-top: 27px;
+	padding-bottom: 25px;
 }
 .advantages-heading {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px; 
 	font-size: 24px;
 	font-weight: 543px;
 	line-height: 30px;
 }
-.advantages-item p {
-	font-size: 16px;
-font-weight: 400;
-line-height: 22px;
+.advantages-item {
+	display: inline-block;
+	vertical-align: top;
+	/*размеры на глаз, проверить*/
+	
+	margin: 0px;
+	padding: 0px;
+	margin-right: 26px;
+	width: 525px; 
 }
+.advantages-item:nth-child(odd) {
+	margin-right: 0px;
+}
+
+.icecream {
+	display: block; 
+	float: left;
+	background: url('../img/sprite.png') no-repeat; 
+	background-position: -5px -109px; width: 49px; height: 49px; 
+}
+.advantages-item p {
+	width: 476px;
+	display: block;
+	float: right;
+	padding-left: 20px; 
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
 .additional-options {
 	margin-bottom: 40px;
 }
