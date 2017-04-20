@@ -283,12 +283,13 @@ article:nth-child(4n) {
 	font-size: 0px;
 
 	color: rgb(50, 50, 50);
+	margin-bottom: 40px;
 }
 .advantages-wrapper {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 27px;
-	padding-bottom: 25px;
+	padding-bottom: 16px;
 }
 .advantages-heading {
 	display: inline-block;
