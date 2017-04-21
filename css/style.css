@@ -22,16 +22,18 @@ p {
 }
 
 .btn {
-	display: table-cell;
+	display: inline-block;
+
+	padding: 10px 33px;
 
 	cursor: pointer;
-	text-align: center;
-	vertical-align: middle;
 	text-decoration: none;
 
 	opacity: 0.988;
 	color: white;
+	border: none;
 	border-radius: 50px;
+	outline: none;
 	background-image:    -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	background-image:     -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -242,9 +244,6 @@ p {
 	line-height: 22px;
 }
 .offer-btn {
-	width: 165px;
-	height: 46px;
-
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
