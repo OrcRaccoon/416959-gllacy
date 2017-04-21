@@ -48,9 +48,11 @@
    					<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
    						<input type="email" name="email" id="enter-email" placeholder="Электронная почта">
    						<input type="enter-password" name="password" id="password" placeholder="Пароль">
+   						
    						<button class="login-btn btn" type="submit">Войти</button>
-   						<a class="login-forgotten" href="#">Забыли пароль?</a>
-   						<a class="login-new" href="#">Новая регистрация</a>
+   							<a class="login-forgotten" href="#">Забыли пароль?</a>
+   							<a class="login-new" href="#">Новая регистрация</a>
+		
    					</form>
    				</div>
    				<div class="basket">
@@ -81,8 +83,8 @@
    									<td class="basket-col">
    										<img src="img/ice-straw.png" alt="Клубничный пломбир с присыпкой  из белого шоколада" height="33" width="33">
    									</td>
-   									<td class="basket-col">
-   										Клубничный пломбир с присыпкой  из белого шоколада
+   									<td class="basket-col"><span class="icecream-type">
+   										Клубничный пломбир с присыпкой  из белого шоколада</span>
    									</td>
    									<td class="basket-col">1,5 кг <span class="icecream-cost">х 300 руб.</span>
    									</td>
@@ -181,7 +183,9 @@
 			</section>
 			<section class="advantages">
 				<div class="advantages-wrapper">
-					<h2 class="advantages-heading">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+				<!-- Тире портит разметку -->
+					<h2 class="advantages-heading">
+					Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
 					<div class="advantages-item clearfix">
 						<div class="icecream"></div>
 						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -232,7 +236,7 @@
 			<p>Для заказов по телефону:</p>
 				<b>8 812 450-25-25</b>
 				<p>(с 10 до 20 ежедневно)</p>
-				
+
 			<a href="#open-form-modal" class="feedback-form-btn btn">Форма обратной связи</a>
 		</div>
 			<!-- <form id="open-form-modal" class="feedback-form-modal" action="https://echo.htmlacademy.ru" method="get">

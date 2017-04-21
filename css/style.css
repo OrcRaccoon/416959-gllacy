@@ -183,16 +183,83 @@ p {
 .login-form input[placeholder] {
 	padding-left: 13px;
 }
+.login-btn {
+float: left;
+	font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+margin-right: 10px;
+}
+
 .login-form a {
+
+	display: block;
+
+
 	font-family: Roboto;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 24px;
 
 	color: rgb(50, 50, 50);
-	border-bottom: 1px solid rgba(173, 172, 170, 0.3);
+	text-decoration: underline;
+}
+.basket-content {
+	width: 540px;
+    min-height: 239px;
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+box-sizing: border-box;
+background-color: #f8f7f4;
+border-radius: 5px;
+box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4); 
+color: #323232;
+
+}
+.basket-table {
+	    margin-bottom: 10px;
+    font-size: 13px;
+font-weight: 400;
+line-height: 16px;
+    text-align: left;
+}
+.basket-table .icecream-type {
+	font-size: 13px;
+font-weight: 400;
+line-height: 16px;
+}
+.basket-row {
+
 }
 
+.basket-col {
+	padding: 12px 5px;
+}
+.basket-col:nth-child(1) {
+	    width: 10px;
+    padding-left: 2px;
+}
+.basket-col:nth-child(2) {
+		    width: 3px;
+    padding-left: 2px;
+}
+.basket-col:nth-child(3) {
+    width: 260px;
+    padding-left: 6px;
+}
+.basket-col:nth-child(4) {
+		    width: 120px;
+    text-align: center;
+}
+.basket-col:nth-child(5) {
+	width: 83px;
+    text-align: center;
+}
+.basket-row-all {
+	border-top: 1px solid #cacac7;;
+}
 .open-time {
 	font-size: 14px;
 	font-weight: 700;
@@ -333,7 +400,7 @@ article:nth-child(4n) {
 	background-image: url(../img/bg-waff.jpg);
 }
 .advantages-wrapper {
-	padding-top: 27px;
+	padding-top: 25px;
 	padding-right: 20px;
 	padding-bottom: 16px;
 	padding-left: 20px;
@@ -342,6 +409,9 @@ article:nth-child(4n) {
 	display: inline-block;
 
 	margin: 0;
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+
 	margin-bottom: 10px;
 
 	font-size: 24px;
@@ -356,7 +426,7 @@ article:nth-child(4n) {
 	width: 535px; 
 	/*размеры на глаз, проверить*/
 	margin: 0;
-	margin-right: 26px;
+	margin-right: 31px;
 	margin-bottom: 10px;
 	padding: 0;
 
@@ -411,7 +481,7 @@ article:nth-child(4n) {
 	float: right;
 
 	width: 476px;
-	margin-top: 16px;
+	margin-top: 12px;
 	margin-left: 7px;
 
 	font-size: 16px;
@@ -446,6 +516,7 @@ article:nth-child(4n) {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px;
+	margin: 0px;
 }
 .blog-news-link {
 	display: block;
