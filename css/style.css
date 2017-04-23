@@ -12,7 +12,7 @@ figure {
 	margin: 0;
 }
 a {
-	text-decoration: none;
+	text-decoration: underline;
 
 	color: white;
 }
@@ -67,13 +67,14 @@ p {
 .main-header {
 	width: auto;
 	min-height: 111px;
-	padding-top: 7px;
+	padding-top: 9px;
 }
 .main-nav {
 	display: block;
 	float: left;
 
 	width: 700px;
+
 }
 .main-nav .logo {
 	display: inline-block;
@@ -93,7 +94,7 @@ p {
 	padding: 0;
 
 	font-size: 0;
-
+	
 	list-style-type: none;
 
 	-webkit-padding-start: 0;
@@ -114,7 +115,7 @@ p {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
-
+text-decoration: none;
 	color: white;
 	/*для теста*/
 	/*background-color: black;*/
@@ -425,7 +426,7 @@ p {
 .contact-info {
 	position: absolute;
 	top: 71px;
-	left: 1005px;
+	left: 1006.5px;
 
 	font-size: 0;
 
@@ -434,7 +435,7 @@ p {
 .contact-info .open-time {
 	display: block;
 
-	padding-bottom: 3px;
+	padding-bottom: 6px;
 
 	font-size: 14px;
 	font-weight: 700;
