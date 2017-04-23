@@ -53,7 +53,8 @@ p {
 	width: 1146px;
 	margin: 0 auto;
 	padding-right: 27px;
-	padding-left: 27px;
+	padding-left: 27px; 
+	position: relative;
 }
 .clearfix:after {
 	display: table;
@@ -65,6 +66,8 @@ p {
 .main-header {
 	width: auto;
 	padding-top: 7px;
+	min-height: 111px;
+
 }
 .main-nav {
 	display: block;
@@ -74,43 +77,46 @@ p {
 }
 .main-nav .logo {
 	display: inline-block;
-
-	margin-right: 20px;
-	margin-left: 0;
-
 	vertical-align: top;
+
+	margin-right: 10px;
+	margin-left: 0;
 }
 
-.main-nav ul {
+.main-nav-list {
 	display: inline-block;
-
+	vertical-align: top;
 	width: 450px;
 	min-height: 64px;
 	margin: 0;
 	padding: 0;
+	font-size: 0;
 
 	list-style-type: none;
-
-	vertical-align: top;
 
 	-webkit-padding-start: 0;
 }
 .main-nav-item {
 	display: inline-block;
+	vertical-align: top;
 
-	margin-right: 24px;
+	margin-right: 8px;
 	padding-top: 20px;
 
-	font-size: 0;
-
-	vertical-align: top;
+font-size: 0;
 }
-.main-nav-item> a {
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 18px;
-
-	color: white;
+.main-nav-item .main-nav-item_link {
+	box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 700;
+    line-height: 18px;
+    color: white;
+    
+/*для теста*/
+    /*background-color: black;*/
+}
+.main-nav-item_link span {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .catalog-menu-list {
@@ -155,6 +161,7 @@ p {
 }
 .user-block-item {
 	display: inline-block;
+	vertical-align: top;
 
 	min-height: 32px;
 	margin-top: 14px;
@@ -163,8 +170,6 @@ p {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
-
-	vertical-align: top;
 }
 
 
@@ -282,8 +287,8 @@ p {
 	z-index: 3;
 	top: 36px;
 	right: 0;
-	visibility: hidden;
 
+	visibility: hidden;
 	overflow: hidden;
 
 	width: 241px;
@@ -413,16 +418,29 @@ p {
 .basket-row-all {
 	border-top: 1px solid #cacac7;;
 }
-.open-time {
+/*Время и телефон*/
+.contact-info {
+	position: absolute;
+
+	top: 71px;
+	left: 1005px;
+	text-align: right;
+	font-size: 0px;
+}
+.contact-info .open-time {
+	display: block;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 16px;
+	padding-bottom: 3px;
 }
 
-.phone {
+.contact-info .phone {
+	display: block;
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 24px;
+
 }
 
 .slide-title {
@@ -488,6 +506,7 @@ p {
 }
 article {
 	display: inline-block;
+	vertical-align: top;
 
 	width: 267px;
 	margin-bottom: 40px;
@@ -498,7 +517,6 @@ article {
 	line-height: 22px;
 
 	text-align: center;
-	vertical-align: top;
 }
 article:nth-child(4n) {
 	padding-right: 0;
@@ -560,6 +578,7 @@ article:nth-child(4n) {
 }
 .advantages-heading {
 	display: inline-block;
+	vertical-align: top;
 
 	margin: 0;
 	margin-bottom: 10px;
@@ -568,13 +587,12 @@ article:nth-child(4n) {
 	font-weight: 543px;
 	line-height: 30px;
 
-	vertical-align: top;
-
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 }
 .advantages-item {
 	display: inline-block;
+	vertical-align: top;
 
 	width: 535px; 
 	/*размеры на глаз, проверить*/
@@ -582,8 +600,6 @@ article:nth-child(4n) {
 	margin-right: 31px;
 	margin-bottom: 10px;
 	padding: 0;
-
-	vertical-align: top;
 }
 .advantages-item:nth-child(odd) {
 	margin-right: 0;
@@ -843,11 +859,10 @@ footer {
 }
 .footer-social .social-btn {
 	display: inline-block;
+	vertical-align: top;
 
 	margin: 0;
 	margin-right: 10px;
-
-	vertical-align: top;
 }
 .twitter {
 	width: 38px;
