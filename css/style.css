@@ -12,9 +12,15 @@ figure {
 	margin: 0;
 }
 a {
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 	color: white;
+}
+a:hover {
+	border-bottom: 1px solid #ffbc9e;
+	color: #ffbc9e;
+
 }
 
 p {
@@ -40,7 +46,12 @@ p {
 	background-image:     -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
+.btn:hover {
+	text-decoration: none;
+	border: none; 
+	color: white;
 
+}
 .site-wrapper {
 	min-width: 1200px;
 	min-height: 100px;
@@ -116,7 +127,7 @@ p {
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
-text-decoration: none;
+border: none;
 	color: white;
 	/*для теста*/
 	/*background-color: black;*/
@@ -176,7 +187,14 @@ text-decoration: none;
 	font-weight: 500;
 	line-height: 16px;
 }
-
+.user-block-item a {
+		border: none;
+}
+/*потом можно будет убрать*/
+.user-block-item a:hover {
+	border: none;
+	color: transparent;
+}
 
 .user-block .search {
 	position: relative;
@@ -185,6 +203,7 @@ text-decoration: none;
 	width: 32px;
 	height: 32px;
 }
+
 .search .search-link {
 	display: block;
 
@@ -330,8 +349,12 @@ text-decoration: none;
 	line-height: 24px;
 
 	text-decoration: underline;
-
+border: none;
 	color: rgb(50, 50, 50);
+}
+.login-form a:hover {
+	color: #e84d37;
+	border: none; 
 }
 .user-block .basket {
 	position: relative;
@@ -553,9 +576,6 @@ article:nth-child(4n) {
 	font-weight: 500;
 	line-height: 22px;
 
-	color: white;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	text-decoration: none;
 }
 .catalog-item-img {
 	margin-bottom: 7px;
@@ -872,11 +892,12 @@ min-height: 103px;
 
 	width: 400px;
 	padding-top: 35px;
+
 }
 .footer-social .social-btn {
 	display: inline-block;
 	vertical-align: top;
-
+border: none; 
 	margin: 0;
 	margin-right: 10px;
 }
@@ -1016,9 +1037,8 @@ left: -22px;
 	width: 170px;
 }
 .footer-docs .footer-docs-link {
-	text-decoration: none;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 .footer-copyright {
 	float: right;
 margin-right: -1px;
