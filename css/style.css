@@ -865,7 +865,7 @@ iframe {
 }
 /*footer*/
 footer {
-	min-height: 103px;
+min-height: 103px;
 }
 .footer-social {
 	float: left;
@@ -967,40 +967,72 @@ footer {
 .footer-docs {
 	float: left;
 
-	width: 340px;
-	padding-top: 35px;
+	padding-top: 30px; 
+	padding-left: 23px;
 }
 .footer-docs .footer-docs-list {
 	font-size: 0;
-
+box-sizing: border-box;
 	list-style-type: none;
+	width: 320px;
+    margin: 0;
+   
+    padding: 0;
 }
 .footer-docs li {
 	display: inline-block;
-
-	padding-right: 30px;
 
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
 
 	text-align: left;
+	padding-bottom: 5px;
+	
+
+}
+.footer-docs li:first-child {
+	font-size: 13px;
+font-weight: 700;
+line-height: 18px;
+}
+.footer-docs li:first-child:before {
+background-position: -91px -261px; 
+width: 15px; 
+height: 13px;
+	background: url("../img/heart.png") no-repeat;
+	overflow: hidden;
+left: -22px;
+    content: " ";
+   position: absolute;
+  }
+.footer-docs li:nth-child(odd) {
+	position: relative;
+	padding-right: 22px;
+	width: 120px;
 }
 .footer-docs li:nth-child(even) {
 	padding-right: 0;
+	width: 170px;
+}
+.footer-docs .footer-docs-link {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .footer-copyright {
 	float: right;
-
-	padding-top: 20px;
+margin-right: -1px;
+	padding-top: 14px;
 }
 .footer-copyright img {
 	display: block;
 
 	width: 108px;
 	height: 38px;
+	margin-bottom: 5px;
 }
 .footer-copyright span {
+
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
