@@ -92,11 +92,12 @@ p {
 	display: inline-block;
 	vertical-align: top;
 
-	margin-right: 10px;
+	margin-right: 7px;
 	margin-left: 0;
 }
 
 .main-nav-list {
+	
 	display: inline-block;
 	vertical-align: top;
 
@@ -112,55 +113,94 @@ p {
 	-webkit-padding-start: 0;
 }
 .main-nav-item {
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 
-	margin-right: 8px;
+	margin-right: 0px;
 	padding-top: 20px;
 
 	font-size: 0;
+
 }
 .main-nav-item .main-nav-item_link {
+	
 	box-sizing: border-box;
-	padding: 10px;
+	padding: 7px 13.5px;
 
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
 border: none;
 	color: white;
+	border-radius: 16px;
 	/*для теста*/
-	/*background-color: black;*/
+	background-color: black;
+
 }
+
 .main-nav-item_link span {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .catalog-menu-list {
-	width: 200px;
-	min-height: 171px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 2;
+	top: 56px;
+	left: 0px;
+
+	box-sizing: border-box;
+	width: 143px;
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+	font-weight: 400;
+line-height: 16px;
+	list-style: none;
 
 	border-radius: 5px;
-	background-color: rgb(248, 247, 244);
+	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .catalog-menu-item {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 16px;
 
-	color: rgb(50, 50, 50);
+	
 }
 .catalog-menu-item a {
-	color: black;
+	color: #323232;
+box-sizing: border-box;
+    display: block;
+    height: 33px;
+    padding-top: 8px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.catalog-menu-item a:hover {
+	border: 0px; 
+	background-color: #fbded7;
 }
 .catalog-menu-item:first-child {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 16px;
-
-	color: rgb(50, 50, 50);
-	border-bottom: 1px solid rgba(209, 208, 206, 0.2);
+	color: #323232;
+	box-sizing: border-box;
+    display: block;
+    height: 33px;
+    padding-top: 8px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.catalog-menu-item:first-child:after {
+	content: "";
+    position: absolute;
+    top: 32px;
+    left: 6px;
+    width: 128px;
+    height: 1px;
+    background-color: #aebac7;
 }
 /*Правая часть шапки*/
 .user-block {
