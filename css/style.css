@@ -26,6 +26,7 @@ p {
 
 .btn {
 	display: inline-block;
+	vertical-align: top;
 
 	box-sizing: border-box;
 	padding: 11px 22.75px;
@@ -493,10 +494,9 @@ p {
 /*Время и телефон*/
 .contact-info {
 	position: absolute;
+	z-index: 1;
 	top: 71px;
 	left: 1006.5px;
-
-	font-size: 0;
 
 	text-align: right;
 }
@@ -859,6 +859,7 @@ iframe {
 }
 .feedback-contacts p {
 	display: inline-block;
+	vertical-align: top;
 
 	font-size: 14px;
 	font-weight: 400;
@@ -869,6 +870,7 @@ iframe {
 }
 .feedback-contacts b {
 	display: inline-block;
+	vertical-align: top;
 
 	font-size: 18px;
 	font-weight: 700;
@@ -1049,6 +1051,7 @@ footer {
 }
 .footer-docs li {
 	display: inline-block;
+	vertical-align: top;
 
 	padding-bottom: 5px;
 
@@ -1233,12 +1236,14 @@ select:hover {
 }
 .filter-fat-width p {
 	display: inline-block;
+	vertical-align: top;
 }
 .filter-extra-width {
 	width: 702px;
 }
 .filter-extra-width p {
 	display: inline-block;
+	vertical-align: top;
 }
 .filter-btn {
 	width: 144px;
@@ -1264,6 +1269,7 @@ select:hover {
 }
 .pagination li {
 	display: inline-block;
+	vertical-align: top;
 }
 .catalog-footer {
 	margin-top: 101px;
