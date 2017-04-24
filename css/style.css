@@ -1067,15 +1067,12 @@ footer {
 	position: absolute;
 	left: -22px;
 
-	overflow: hidden;
-
 	width: 15px;
 	height: 13px;
 
 	content: " ";
 
 	background: url("../img/heart.png") no-repeat;
-	background-position: -91px -261px;
 }
 .footer-docs li:nth-child(odd) {
 	position: relative;
