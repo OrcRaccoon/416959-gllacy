@@ -138,6 +138,10 @@ p {
 .main-nav-item_link span {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.main-nav-item_link:hover {
+	color: black;
+	background-color: white;
+}
 .catalog-menu-list {
 	position: absolute;
 	z-index: 2;
