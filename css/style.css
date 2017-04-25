@@ -144,6 +144,7 @@ p {
 	top: 56px;
 	left: 0;
 
+	visibility: hidden;
 	overflow: hidden;
 
 	box-sizing: border-box;
@@ -236,7 +237,7 @@ p {
 }
 /*потом можно будет убрать*/
 .user-block-item a:hover {
-	color: transparent;
+	color: white;
 	border: none;
 }
 
@@ -320,29 +321,29 @@ p {
 	border-radius: 16px;
 	background-color: #a0b3a9;
 }
-
-.login:hover .login-link {
-	color: black;
-	background-color: white;
-}
-.login:hover .login-sprite {
-	background: url("../img/sprite.png") no-repeat;
-	background-position: -68px -475px;
-}
-.login:hover .login-form {
-	visibility: visible;
-}
-.login-sprite {
+.login-link:before {
 	position: absolute;
 	left: 16px;
 
 	width: 21px;
 	height: 19px;
 
+	content: "";
+
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -68px -499px;
 }
-
+.login:hover .login-link {
+	color: black;
+	background-color: white;
+}
+.login:hover .login-link:before {
+	background: url("../img/sprite.png") no-repeat;
+	background-position: -68px -475px;
+}
+.login:hover .login-form {
+	visibility: visible;
+}
 .login-form {
 	position: absolute;
 	z-index: 3;
@@ -416,12 +417,14 @@ p {
 	border-radius: 16px;
 	background-color: #a0b3a9;
 }
-.basket-sprite {
+.basket-link:before {
 	position: absolute;
 	left: 16px;
 
 	width: 21px;
 	height: 20px;
+
+	content: "";
 
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -71px -80px;
