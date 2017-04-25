@@ -142,6 +142,10 @@ p {
 	color: black;
 	background-color: white;
 }
+.main-nav-item_link:active {
+	background-color: #ededed;
+box-shadow: inset 0 2px 1px dimgrey;
+}
 .catalog-menu-list {
 	position: absolute;
 	z-index: 2;
@@ -308,6 +312,7 @@ p {
 
 	height: 32px;
 }
+
 .login-link {
 	display: block;
 
