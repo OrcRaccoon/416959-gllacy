@@ -131,8 +131,8 @@ p {
 	color: white;
 	border: none;
 	border-radius: 16px;
-	/*для теста*/
-	background-color: black;
+	/*для теста
+	background-color: black;*/
 }
 
 .main-nav-item_link span {
@@ -261,17 +261,10 @@ p {
 
 	color: #ffffff;
 	border-radius: 16px;
+	background: url("../img/loop.png") no-repeat;
 	background-color: #a0b3a9;
+	background-position: 50% 50%;
 }
-.search .loop-img {
-	position: absolute;
-	z-index: 5;
-
-	box-sizing: border-box;
-	width: 17px;
-	height: 17px;
-}
-
 
 .user-block form {
 	border-radius: 5px;
