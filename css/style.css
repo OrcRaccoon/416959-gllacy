@@ -163,26 +163,23 @@ p {
 .main-nav-item:hover .catalog-menu-list-wrapper {
 	display: block;
 }
+
 .main-nav-item_link:active {
 	background-color: #ededed;
 	box-shadow: inset 0 2px 1px dimgrey;
 }
 
 .catalog-menu-list-wrapper {
-position: absolute;
-    z-index: 1;
-    top: 30px;
-    left: 0px;
-    padding-top: 20px;
-    display: none;
+position: relative;
+display: none;
+padding-top: 15px;
 }
 .catalog-menu-list {
-/*	position: absolute;
+position: absolute;
 	z-index: 22;
-	top: 49px;
+	top: 15px;
 	left: 0;
-
-	display: block;*/
+	
 	overflow: hidden;
 
 	box-sizing: border-box;
@@ -236,7 +233,7 @@ position: absolute;
 }
 .catalog-menu-item:first-child:after {
 	position: absolute;
-	top: 52px;
+	top: 33px;
 	left: 6px;
 
 	width: 128px;
@@ -386,7 +383,7 @@ position: absolute;
 	display: block;
 }
 .login-form {
-	display: block;
+	display: none;
 	position: absolute;
 	z-index: 3;
 	top: 36px;
