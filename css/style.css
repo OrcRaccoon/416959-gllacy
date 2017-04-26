@@ -128,6 +128,7 @@ p {
 }
 .main-nav-item {
 	position: relative;
+	z-index: 22;
 
 	display: inline-block;
 	vertical-align: top;
@@ -159,17 +160,29 @@ p {
 	color: black;
 	background-color: white;
 }
+.main-nav-item:hover .catalog-menu-list-wrapper {
+	display: block;
+}
 .main-nav-item_link:active {
 	background-color: #ededed;
 	box-shadow: inset 0 2px 1px dimgrey;
 }
+
+.catalog-menu-list-wrapper {
+position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 0px;
+    padding-top: 20px;
+    display: none;
+}
 .catalog-menu-list {
-	position: absolute;
-	z-index: 2;
-	top: 56px;
+/*	position: absolute;
+	z-index: 22;
+	top: 49px;
 	left: 0;
 
-	visibility: hidden;
+	display: block;*/
 	overflow: hidden;
 
 	box-sizing: border-box;
@@ -204,6 +217,7 @@ p {
 	border: 0;
 	background-color: #fbded7;
 }
+
 .catalog-menu-item:first-child {
 	display: block;
 
@@ -222,7 +236,7 @@ p {
 }
 .catalog-menu-item:first-child:after {
 	position: absolute;
-	top: 32px;
+	top: 52px;
 	left: 6px;
 
 	width: 128px;
@@ -368,16 +382,18 @@ p {
 	background-position: -68px -475px;
 }
 .login:hover .login-form {
-	visibility: visible;
+	/*visibility: visible;*/
+	display: block;
 }
 .login-form {
+	display: block;
 	position: absolute;
 	z-index: 3;
 	top: 36px;
 	right: 0;
 
-	visibility: hidden;
-	overflow: hidden;
+	visibility: visible;
+/*overflow: hidden;*/
 
 	width: 241px;
 	min-height: 214px;
