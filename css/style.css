@@ -709,10 +709,12 @@ position: absolute;
 /*карточки товаров, почти попиксельно*/
 .hits {
 	font-size: 0;
+	position: relative;
 }
 article {
 	display: inline-block;
 	vertical-align: top;
+	position: relative;
 
 	width: 267px;
 	margin-bottom: 40px;
@@ -731,6 +733,7 @@ article:nth-child(4n) {
 }
 .hit-img {
 	position: absolute;
+	z-index: 8;
 
 	width: 61px;
 	height: 61px;
@@ -740,6 +743,30 @@ article:nth-child(4n) {
 }
 .catalog-item {
 	position: relative;
+}
+
+.catalog-item-hover {
+	position: absolute;
+	z-index: 6;
+	top: -6px;
+	left: -13px;
+
+	display: none;
+
+	padding-top: 6px;
+	padding-bottom: 20px;
+	padding-right: 13px;
+	padding-left: 13px;
+
+	border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+.catalog-hover-btn {
+	margin-top: 10px;
+}
+.catalog-item:hover .catalog-item-hover {
+ display: block;
 }
 .catalog-item a {
 	font-size: 16px;
@@ -751,9 +778,11 @@ figure {
 }
 .catalog-item-img {
 	margin-bottom: 7px;
+
 }
 .item-price {
 	position: absolute;
+	z-index: 7;
 	top: 209px;
 	left: 0;
 
