@@ -568,7 +568,7 @@ position: absolute;
 	display: none;
 }
 .slide-title {
-	width: 670px;
+	width: 671px;
 	margin: 0 auto;
 	margin-bottom: 29px;
 
@@ -1252,6 +1252,12 @@ footer {
 /*footer ends*/
 
 /*catalog.html*/
+.catalog-page-wrapper {
+	min-width: 1200px;
+	
+	background-color: #849d8f;
+}
+
 .breadcrumbs {
 	margin-top: 20px;
 }
@@ -1268,27 +1274,60 @@ footer {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
+	color: white;
 }
-
+fieldset {
+    padding: 0;
+    margin: 0;
+    border-width: 0px;
+    border-style: none;
+    border-color: none;
+    border-image: initial;
+}
 .filter {
 	margin-top: -20px;
-	margin-bottom: 44px;
+	margin-bottom: 27px;
 }
 .filter h1 {
 	font-size: 35px;
 	font-weight: 700;
 	line-height: 41px;
+	color: white;
 }
+.filter form {
+    box-sizing: border-box;
+  display: block;
+    width: 900px;
+    font-size: 0px;
+}
+
 .filter-item {
 	display: inline-block;
 	vertical-align: top;
 
+	box-sizing: border-box;
+	margin-right: 14px;
+	margin-bottom: 12px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+
+	color: white;
 	border: none;
 }
+.filter-item:nth-child(3) {
+	margin-right: 0px;
+}
 .filter-item legend {
+	display: block;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
+
+	margin-bottom: 9px;
+    margin-left: 15px;
+	padding: 0;
 }
 .filter-field {
 	min-height: 36px;
@@ -1302,6 +1341,7 @@ footer {
 	text-align: center;
 }
 select {
+
 	width: 193px;
 	height: 36px;
 	padding-right: 10px;
@@ -1368,26 +1408,95 @@ select:hover {
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 .toggle-left {
-	left: 35px;
+	left: 33px;
 }
 .toggle-right {
-	right: 55px;
+	right: 66px;
 }
 .filter-fat-width {
-	width: 415px;
+	width: 416px;
+	box-sizing: border-box;
+	font-size: 0px;
+
 }
-.filter-fat-width p {
+/*.filter-fat-width p {
+display: inline-block;
+	vertical-align: top;
+padding-right: 10px;
+padding-left: 10px;
+}*/
+.filter-fat-width input[type="radio"] {
+	display: none;
+}
+.filter-fat-width input[type="radio"]+ label {
+	position: relative;
+
 	display: inline-block;
 	vertical-align: top;
+	box-sizing: border-box;
+
+	padding-left: 29px;
+	margin-left: 16px;
+	margin-right: 5px;
+margin-top: 6px;
+margin-bottom: 7px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+
+	cursor: pointer;
 }
+.filter-fat-width input[type="radio"] + label:before {
+	content: "";
+	display: block;
+	width: 21px;
+	height: 22px;
+
+
+background: url('../img/sprite.png') no-repeat;
+	background-position: -57px -550px;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 0px;
+}
+/*Normal hover*/
+.filter-fat-width input[type="radio"] + label:hover:before {
+background-position: -5px -539px;	
+}
+/*Checked*/
+.filter-fat-width input[type="radio"]:checked + label:before {
+background-position: -68px -523px;
+	
+}.filter-fat-width input[type="radio"]:checked + label:hover:before {
+background-position: -5px -512px;
+}
+/*Disable*/
+.filter-fat-width input[type="radio"]:disabled + label:before {
+background-position: -31px -527px;
+}
+.filter-fat-width input[type="radio"]:disabled + label:hover:before {
+background-position: -31px -527px;
+}
+/*Checked+disabled*/
+.filter-fat-width input[type="radio"]:checked:disabled + label:before {
+	background-position: -42px -500px;
+}
+
 .filter-extra-width {
 	width: 702px;
 }
 .filter-extra-width p {
-	display: inline-block;
+display: inline-block;
 	vertical-align: top;
+	padding-right: 10px;
+	padding-left: 20px;
+	padding-top: 10px;
 }
 .filter-btn {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 10px;
 	width: 144px;
 	height: 36px;
 
