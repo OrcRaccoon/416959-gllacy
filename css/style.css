@@ -745,7 +745,7 @@ article:nth-child(4n) {
 	position: relative;
 }
 
-.catalog-item-hover {
+.catalog-item-preview {
 	position: absolute;
 	z-index: 6;
 	top: -6px;
@@ -762,10 +762,10 @@ article:nth-child(4n) {
     background-color: rgba(255, 255, 255, 0.4);
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
-.catalog-hover-btn {
+.catalog-preview-btn {
 	margin-top: 10px;
 }
-.catalog-item:hover .catalog-item-hover {
+.catalog-item:hover .catalog-item-preview {
  display: block;
 }
 .catalog-item a {
