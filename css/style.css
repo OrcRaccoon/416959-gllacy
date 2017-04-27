@@ -90,6 +90,8 @@ p {
 
 	content: " ";
 }
+
+
 /*Шапка*/
 .main-header {
 	width: auto;
@@ -253,6 +255,7 @@ p {
 	min-width: 267px;
 	max-width: 350px;
 	margin-right: -10px;
+		margin-top: 14px;
 
 	font-size: 0;
 
@@ -263,7 +266,6 @@ p {
 	vertical-align: top;
 
 	min-height: 32px;
-	margin-top: 14px;
 	margin-right: 10px;
 
 	font-size: 14px;
@@ -336,24 +338,31 @@ p {
 .search-form input[placeholder] {
 	padding-left: 13px;
 }
-.user-block .login {
+.user-block-item:nth-child(2) {
 	position: relative;
 	z-index: 2;
 
-	height: 32px;
+	min-height: 32px;
 }
-
+.login-form_wrap {
+  display: none;
+  z-index: 8;
+  width: 275px;
+  position: absolute;
+  top: 32px;
+  right: 0px;
+}
 .login-link {
 	display: block;
 
 	box-sizing: border-box;
 	min-width: 92px;
-	height: 32px;
+	min-height: 32px;
 	padding: 7px;
 	padding-right: 10px;
 	padding-left: 44px;
 
-	text-align: left;
+	text-align: center;
 	text-decoration: none;
 
 	color: #ffffff;
@@ -372,39 +381,33 @@ p {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -68px -499px;
 }
-.login:hover .login-link {
+.user-block-item:nth-child(2):hover .login-link {
 	color: black;
 	background-color: white;
 }
-.login:hover .login-link:before {
+.user-block-item:nth-child(2):hover .login-link:before {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -68px -475px;
 }
-.login:hover .login-form {
-	/*visibility: visible;*/
+.user-block-item:nth-child(2):hover .login-form_wrap {
 	display: block;
 }
 .login-form {
-	position: absolute;
-	z-index: 3;
-	top: 36px;
-	right: 0;
-
-	display: none;
-	visibility: visible;
-	/*overflow: hidden;*/
-
-	width: 241px;
-	min-height: 214px;
-	padding-top: 20px;
-	padding-right: 17px;
+	box-sizing: border-box;
+	width: 275px;
+padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 16px;
 	padding-left: 17px;
+	margin-top: 4px;
 }
 
 .login-form input {
-	width: 228px;
+	box-sizing: border-box;
+	width: 240px;
 	height: 44px;
 	margin-bottom: 20px;
+
 }
 .login-form input[placeholder] {
 	padding-left: 13px;
@@ -420,7 +423,9 @@ p {
 }
 
 .login-form a {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
+	min-width: 120px;
 
 	font-family: Roboto;
 	font-size: 13px;
@@ -431,6 +436,7 @@ p {
 
 	color: rgb(50, 50, 50);
 	border: none;
+	text-align: left;
 }
 .login-form a:hover {
 	color: #e84d37;
