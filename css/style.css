@@ -552,17 +552,25 @@ p {
 	display: block;
 }
 
-.user-block .basket {
+.user-block-item:nth-child(3) {
 	position: relative;
-
+box-sizing: border-box;
 	height: 32px;
+	width: 117px;
 }
-.basket-link {
+/*Корзина*/
+.user-block-item:nth-child(3) {
+	position: relative;
+box-sizing: border-box;
+	height: 32px;
+	width: 117px;
+}
+.user-block-item:nth-child(3) .basket-link {
 	display: block;
 
 	box-sizing: border-box;
 	min-width: 117px;
-	height: 32px;
+	min-height:32px;
 	padding: 7px;
 	padding-right: 10px;
 	padding-left: 44px;
@@ -574,7 +582,8 @@ p {
 	border-radius: 16px;
 	background-color: rgba(255, 225, 225, 0.2);
 }
-.basket-link:before {
+
+.user-block-item:nth-child(3) .basket-link:before {
 	position: absolute;
 	left: 16px;
 
@@ -587,10 +596,17 @@ p {
 	background-position: -71px -80px;
 }
 
-.basket-content {
+.user-block-item:nth-child(3) .basket-content {
+	position: relative;
+	z-index: 10;
+	right: 420px;
+
+	display: none;
+
 	box-sizing: border-box;
 	width: 540px;
 	min-height: 239px;
+	margin-top: 4px;
 	padding: 15px;
 	padding-top: 30px;
 	padding-bottom: 20px;
@@ -600,21 +616,37 @@ p {
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
-.basket-table {
+.user-block-item:nth-child(3) .basket-content:before {
+	position: absolute;
+	z-index: 12;
+	top: -4px;
+	right: 0;
+
+	display: block;
+
+	width: 117px;
+	height: 4px;
+
+	content: "";
+}
+	
+.user-block-item:nth-child(3) .basket-table {
+
 	margin-bottom: 10px;
+	box-sizing: border-box;
 
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 16px;
 
 	text-align: left;
+	
 }
 .basket-table .icecream-type {
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 16px;
 }
-
 
 .basket-col {
 	padding: 12px 5px;
@@ -643,6 +675,17 @@ p {
 }
 .basket-row-all {
 	border-top: 1px solid #cacac7;
+}
+.user-block-item:nth-child(3):hover .basket-link {
+	color: black;
+	background-color: white;
+}
+.user-block-item:nth-child(3):hover .basket-link:before {
+	background: url("../img/sprite.png") no-repeat;
+	background-position: -42px -475px;
+}
+.user-block-item:nth-child(3):hover .basket-content {
+	display: block;
 }
 /*Время и телефон*/
 .contact-info {
