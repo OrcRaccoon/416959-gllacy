@@ -1501,10 +1501,12 @@ fieldset {
 }
 .filter-popular-width {
 	width: 193px;
-
+position: relative;
+z-index: 1;
 	text-align: center;
 }
-select {
+
+.filter-popular-width select {
 	width: 193px;
 	height: 36px;
 	padding-right: 10px;
@@ -1527,13 +1529,29 @@ select {
 	-webkit-appearance: none;
 }
 /*скрыть стрелку for IE10*/
-select::-ms-expand {
+.filter-popular-width select::-ms-expand {
 	display: none;
 }
+.filter-popular-width:after {
+	position: absolute;
+	z-index: 10;
+	content: "";
+	display: block;
+	top: 15px;
+	right: 13px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid white;
+}
 
-select:hover {
+.filter-field:hover select {
 	color: black;
 	background-color: white;
+}
+.filter-field:hover.filter-popular-width:after {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid black;
 }
 .filter-price-width {
 	position: relative;
