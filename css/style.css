@@ -17,8 +17,7 @@ a {
 	color: white;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-a:hover,
-a:active {
+a:hover, a:active {
 	color: #ffbc9e;
 	border-bottom: 1px solid #ffbc9e;
 }
@@ -52,6 +51,11 @@ p {
 	border: none;
 	background-image: linear-gradient(to top, #ec6e5d 0%, #f58669 100%);
 	box-shadow: 0 1px 2px #ac1000;
+}
+.btn:active {
+	background-color: red;
+	background-image: linear-gradient(to top, #e1613e 0%, #d74531 100%);
+	box-shadow: inset 0 2px 2px #942718;
 }
 .site-wrapper {
 	min-width: 1200px;
@@ -120,8 +124,9 @@ p {
 
 	width: 600px;
 	margin: 0;
+	margin-top: -7px;
 	padding: 0;
-padding-top: 20px;
+	padding-top: 20px;
 
 	font-size: 0;
 
@@ -137,52 +142,49 @@ padding-top: 20px;
 	vertical-align: top;
 
 	margin-right: 0;
+	padding: 7px 13.5px;
 
 	font-size: 0;
+
+	color: white;
+	border-radius: 16px;
 }
 .main-nav-item .main-nav-item_link {
 	box-sizing: border-box;
-	padding: 7px 13.5px;
 
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
 
-	color: white;
-	border: none;
-	border-radius: 16px;
-	/*для теста
-	background-color: black;*/
+	color: inherit;
+	border: none;	
 }
 
 .main-nav-item_link span {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-
-.catalog-menu-list-wrapper {
+.main-nav-item:first-child {
 	position: relative;
+}
+.catalog-menu-list-wrapper {
+	position: absolute;
+	z-index: 8;
+	top: 32px;
+	right: -49px;
 
 	display: none;
 
-	padding-top: 15px;
+	width: 143px;
 }
 .catalog-menu-list {
-	position: absolute;
-	z-index: 22;
-	top: 15px;
-	left: 0;
-
-	overflow: hidden;
-
 	box-sizing: border-box;
-	width: 143px;
+	width: 145px;
 	margin: 0;
+	margin-top: 4px;
 	padding: 0;
 
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 16px;
+	font-size: 0;
 
 	list-style: none;
 
@@ -190,42 +192,53 @@ padding-top: 20px;
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
-.main-nav-item_link:hover {
+.main-nav-item:hover {
 	color: black;
 	background-color: white;
 }
-.main-nav-item_link:first-child:hover .catalog-menu-list-wrapper {
+.main-nav-item:first-child:hover .catalog-menu-list-wrapper {
 	display: block;
 }
 
-.main-nav-item_link:active {
+.main-nav-item:active {
 	background-color: #ededed;
 	box-shadow: inset 0 2px 1px dimgrey;
 }
 
 .catalog-menu-item a {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 
 	box-sizing: border-box;
 	height: 33px;
-	padding-top: 8px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 6px;
+	padding-bottom: 6px;
 	padding-left: 20px;
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
 
 	text-decoration: none;
 
 	color: #323232;
+	border: none;
 }
-.catalog-menu-item a:hover {
-	border: 0;
-	background-color: #fbded7;
+.catalog-menu-item:last-child {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
-
 .catalog-menu-item:first-child {
+	position: relative;
+
 	display: block;
 
 	box-sizing: border-box;
-	height: 33px;
-	padding-top: 8px;
+	height: 38px;
+	padding-top: 11px;
+	padding-bottom: 11px;
 	padding-left: 20px;
 
 	font-size: 14px;
@@ -235,10 +248,11 @@ padding-top: 20px;
 	text-decoration: none;
 
 	color: #323232;
+	border-radius: 5px;
 }
 .catalog-menu-item:first-child:after {
 	position: absolute;
-	top: 33px;
+	top: 38px;
 	left: 6px;
 
 	width: 128px;
@@ -248,6 +262,15 @@ padding-top: 20px;
 
 	background-color: #aebac7;
 }
+.catalog-menu-item:hover:not(:first-child) {
+	border: 0;
+	background-color: #fbded7;
+}
+.catalog-menu-item:active:not(:first-child) {
+	background-color: #f6b5a5;
+}
+
+
 /*Правая часть шапки*/
 .user-block {
 	float: right;
@@ -255,8 +278,8 @@ padding-top: 20px;
 	box-sizing: border-box;
 	min-width: 267px;
 	max-width: 355px;
+	margin-top: 14px;
 	margin-right: -10px;
-		margin-top: 14px;
 
 	font-size: 0;
 
@@ -270,57 +293,61 @@ padding-top: 20px;
 }
 .user-block input {
 	display: block;
-	box-sizing: border-box;
-color: #323232;
-font-family: Roboto;
-font-size: 16px;
-font-weight: 700;
-line-height: 24px;
-height: 44px;
 
+	box-sizing: border-box;
+	height: 44px;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 13px; 
+
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+
+	color: #323232;
 	border: 1px solid rgb(211, 211, 210);
 	border-radius: 5px;
 	background-color: white;
-
-	padding-top: 10px;
-padding-bottom: 10px;
-padding: 0px; 
-
-padding-left: 13px; 
 }
 
 .user-block input::-webkit-input-placeholder {
-	color: #999;
-font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
+	height: 44px;
 
-height: 44px;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+
+	color: #999999;
 }
 .user-block input::-moz-placeholder {
-		color: #999;
-font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-height: 44px;
+	height: 44px;
+
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+
+	color: #999999;
 }
 .user-block input:-ms-input-placeholder {
-			color: #999;
-font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
+	height: 44px;
 
-height: 44px;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+
+	color: #999999;
 }
 /*Стилизация состояний input*/
 .user-block input:hover {
 	border: 2px solid rgba(154, 154, 154, 0.52);
 }
 .user-block input:focus {
-border: 2px solid rgba(46, 136, 228, 0.52); 
+	border: 2px solid rgba(46, 136, 228, 0.52); 
 }
 
 /*Стилизация состояний placeholder*/
@@ -364,12 +391,14 @@ border: 2px solid rgba(46, 136, 228, 0.52);
 	height: 32px;
 }
 .user-block-item:nth-child(1) .search-form_wrap {
-  display: none;
-  z-index: 8;
-width: 341px;
-  position: absolute;
-  top: 32px;
-  right: 0px;
+	position: absolute;
+	z-index: 8;
+	top: 32px;
+	right: 0;
+
+	display: none;
+
+	width: 341px;
 }
 .user-block-item:nth-child(1) .search-link {
 	display: block;
@@ -391,15 +420,14 @@ width: 341px;
 
 .user-block-item:nth-child(1) .search-form {
 	display: block;
-	box-sizing: border-box;
 
+	box-sizing: border-box;
 	width: 341px;
-padding-top: 20px;
+	margin-top: 4px;
+	padding-top: 20px;
 	padding-right: 15px;
 	padding-bottom: 20px;
 	padding-left: 15px;
-
-	margin-top: 4px;
 }
 .search-form input {
 	width: 311px;
@@ -409,8 +437,8 @@ padding-top: 20px;
 }
 .user-block-item:nth-child(1):hover .search-link {
 	background: url("../img/loop-hover.png") no-repeat;
-background-color: white;
-background-position: 50% 50%;
+	background-color: white;
+	background-position: 50% 50%;
 }
 
 .user-block-item:nth-child(1):hover .search-form_wrap {
@@ -424,12 +452,14 @@ background-position: 50% 50%;
 	min-height: 32px;
 }
 .user-block-item:nth-child(2) .login-form_wrap {
-  display: none;
-  z-index: 8;
-  width: 275px;
-  position: absolute;
-  top: 32px;
-  right: 0px;
+	position: absolute;
+	z-index: 8;
+	top: 32px;
+	right: 0;
+
+	display: none;
+
+	width: 275px;
 }
 .user-block-item:nth-child(2) .login-link {
 	display: block;
@@ -463,11 +493,11 @@ background-position: 50% 50%;
 .user-block-item:nth-child(2) .login-form {
 	box-sizing: border-box;
 	width: 275px;
-padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 16px;
-	padding-left: 17px;
 	margin-top: 4px;
+	padding-top: 20px;
+	padding-right: 16px;
+	padding-bottom: 20px;
+	padding-left: 17px;
 }
 
 .login-form input {
@@ -475,7 +505,6 @@ padding-top: 20px;
 	width: 240px;
 	height: 44px;
 	margin-bottom: 20px;
-
 }
 .login-form input[placeholder] {
 	padding-left: 13px;
@@ -493,6 +522,7 @@ padding-top: 20px;
 .login-form a {
 	display: inline-block;
 	vertical-align: top;
+
 	min-width: 120px;
 
 	font-family: Roboto;
@@ -500,14 +530,13 @@ padding-top: 20px;
 	font-weight: 400;
 	line-height: 24px;
 
+	text-align: left;
 	text-decoration: underline;
 
 	color: rgb(50, 50, 50);
 	border: none;
-	text-align: left;
 }
-.login-form a:hover,
-.login-form a:active {
+.login-form a:hover, .login-form a:active {
 	color: #e84d37;
 	border: none; 
 }
