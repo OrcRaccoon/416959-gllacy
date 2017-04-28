@@ -1418,11 +1418,12 @@ footer {
 
 .breadcrumbs {
 	margin-top: 20px;
+	margin-bottom: 24px;
 }
 .breadcrumbs ul {
 	margin: 0;
 	padding: 0;
-
+font-size: 0px;
 	list-style-type: none;
 }
 .breadcrumbs li {
@@ -1435,15 +1436,16 @@ footer {
 
 	color: white;
 }
-fieldset {
-	margin: 0;
-	padding: 0;
 
-	border-width: 0;
-	border-style: none;
-	border-color: none;
-	border-image: initial;
+.breadcrumbs span {
+	margin-right: 10px;
+	margin-left: 4px;
 }
+.breadcrumbs span:last-child {
+	margin-right: 7px;
+margin-left: 4px;
+}
+
 .filter {
 	margin-top: -20px;
 	margin-bottom: 27px;
@@ -1452,10 +1454,13 @@ fieldset {
 	font-size: 35px;
 	font-weight: 700;
 	line-height: 41px;
+	margin: 0;
+	margin-bottom: 27px;
 
 	color: white;
 }
-.filter form {
+
+.filter .filter-form {
 	display: block;
 
 	box-sizing: border-box;
@@ -1469,8 +1474,10 @@ fieldset {
 	vertical-align: top;
 
 	box-sizing: border-box;
+	margin: 0;
 	margin-right: 14px;
 	margin-bottom: 12px;
+	padding: 0;
 
 	font-size: 16px;
 	font-weight: 500;
@@ -1478,6 +1485,10 @@ fieldset {
 
 	color: white;
 	border: none;
+	border-width: 0;
+	border-style: none;
+	border-color: none;
+	border-image: initial;
 }
 .filter-item:nth-child(3) {
 	margin-right: 0;
@@ -1485,8 +1496,8 @@ fieldset {
 .filter-item legend {
 	display: block;
 
-	margin-bottom: 9px;
-	margin-left: 15px;
+	margin-bottom: 7px;
+	margin-left: 16px;
 	padding: 0;
 
 	font-size: 14px;
@@ -1507,10 +1518,10 @@ z-index: 1;
 }
 
 .filter-popular-width select {
+	box-sizing: border-box;
 	width: 193px;
 	height: 36px;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding-left: 15px;
 
 	font-family: Roboto;
 	font-size: 16px;
@@ -1521,7 +1532,6 @@ z-index: 1;
 	border: none;
 	border-radius: 25px;
 	background-color: #aabbb1;
-	background-image: url();
 	/*скрыть стрелку for firefox*/
 
 	-moz-appearance: none;
@@ -1589,10 +1599,10 @@ z-index: 1;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 .toggle-left {
-	left: 33px;
+	left: 35px;
 }
 .toggle-right {
-	right: 66px;
+	right: 65px;
 }
 .filter-fat-width {
 	box-sizing: border-box;
@@ -1610,8 +1620,8 @@ z-index: 1;
 	vertical-align: top;
 
 	box-sizing: border-box;
-	margin-top: 6px;
-	margin-right: 5px;
+	margin-top: 7px;
+	margin-right: 6px;
 	margin-bottom: 7px;
 	margin-left: 16px;
 	padding-left: 29px;
