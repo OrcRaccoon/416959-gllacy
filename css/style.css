@@ -1664,24 +1664,72 @@ z-index: 1;
 	background-position: -31px -527px;
 }
 .filter-fat-width input[type="radio"]:disabled+ label:hover:before {
-	background-position: -31px -527px;
-}
-/*Checked+disabled*/
-.filter-fat-width input[type="radio"]:checked:disabled+ label:before {
 	background-position: -42px -500px;
 }
 
 .filter-extra-width {
+	box-sizing: border-box;
 	width: 702px;
+
+	font-size: 0;
 }
-.filter-extra-width p {
+.filter-extra-width input[type="checkbox"] {
+	display: none;
+}
+.filter-extra-width input[type="checkbox"]+ label {
+	position: relative;
+
 	display: inline-block;
 	vertical-align: top;
 
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-left: 20px;
+	box-sizing: border-box;
+	margin-top: 7px;
+	margin-right: 6px;
+	margin-bottom: 7px;
+	margin-left: 16px;
+	padding-left: 29px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+
+	cursor: pointer;
 }
+.filter-extra-width input[type="checkbox"]+ label:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 21px;
+  height: 22px;
+
+  content: "";
+
+  background: url("../img/sprite.png") no-repeat;
+  background-color: transparent;
+  background-position: -82px -601px;
+}
+/*Normal hover*/
+.filter-extra-width input[type="checkbox"]+ label:hover:before {
+  background-position: -5px -591px;
+}
+/*Checked*/
+.filter-extra-width input[type="checkbox"]:checked+ label:before {
+  background-position: -57px -577px;
+}
+.filter-extra-width input[type="checkbox"]:checked+ label:hover:before {
+  background-position: -83px -576px;
+}
+/*Disable*/
+.filter-extra-width input[type="checkbox"]:disabled+ label:before {
+  background-position: -30px -580px;
+}
+.filter-extra-width input[type="checkbox"]:disabled+ label:hover:before {
+  background-position: -5px -566px;
+}
+
 .filter-btn {
 	display: inline-block;
 	vertical-align: bottom;
