@@ -888,16 +888,25 @@ article:nth-child(4n) {
 .catalog-item:hover .catalog-item-preview {
 	display: block;
 }
-.catalog-item a {
+.catalog-item-img + span {
+	display: inline-block;
+	text-align: center;
+	width: 260px;
+}
+.catalog-item-img + a {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px;
 }
-figure {
-	margin: 0;
-}
 .catalog-item-img {
-	margin-bottom: 7px;
+	margin: 0;
+	margin-bottom: 0px;
+	padding-bottom: 9px;
+
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
 }
 .item-price {
 	position: absolute;
@@ -1659,6 +1668,10 @@ padding-left: 10px;
 
 		font-size: 0;
 	}
+.catalog-item-preview.inner_preview {
+	padding-right: 13px;
+
+}
 	.pagination {
 		display: block;
 		float: right;
