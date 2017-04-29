@@ -567,6 +567,7 @@ box-sizing: border-box;
 }
 .user-block-item:nth-child(3) .basket-link {
 	display: block;
+	position: relative;
 
 	box-sizing: border-box;
 	min-width: 117px;
@@ -595,7 +596,26 @@ box-sizing: border-box;
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -71px -80px;
 }
+.user-block-item:nth-child(3) .basket-link-hover {
+	display: none;
+	position: absolute;
+	z-index: 50;
+	top: 0;
+	left: 0;
+}
 
+.user-block-item:nth-child(3) .basket-link-hover:before {
+	position: absolute;
+	left: 16px;
+
+	width: 21px;
+	height: 20px;
+
+	content: "";
+
+	background: url("../img/sprite.png") no-repeat;
+	background-position: -42px -475px;
+}
 .user-block-item:nth-child(3) .basket-content {
 	position: relative;
 	z-index: 10;
@@ -680,10 +700,10 @@ box-sizing: border-box;
 	color: black;
 	background-color: white;
 }
-.user-block-item:nth-child(3):hover .basket-link:before {
-	background: url("../img/sprite.png") no-repeat;
-	background-position: -42px -475px;
+.user-block-item:nth-child(3):hover .basket-link-hover {
+	display: block;
 }
+
 .user-block-item:nth-child(3):hover .basket-content {
 	display: block;
 }
