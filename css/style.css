@@ -1561,6 +1561,14 @@ border: none;
 	border: 0;
 	background-color: #d07058;
 }
+.catalog-menu-list .catalog-menu-item-active:hover {
+	border: 0;
+	background-color: #d07058;
+}
+.catalog-menu-item-active a {
+	color: white;
+}
+
 .user-block-item:nth-child(3) .basket-link_catalog {
 	position: absolute;
 	z-index: 50;
