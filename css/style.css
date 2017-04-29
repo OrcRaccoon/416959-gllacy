@@ -262,6 +262,7 @@ p {
 
 	background-color: #aebac7;
 }
+
 .catalog-menu-item:hover:not(:first-child) {
 	border: 0;
 	background-color: #fbded7;
@@ -1556,7 +1557,10 @@ border: none;
 .main-nav-item_active span {
 	border:none;
 }
-
+.catalog-menu-list .catalog-menu-item-active {
+	border: 0;
+	background-color: #d07058;
+}
 .user-block-item:nth-child(3) .basket-link_catalog {
 	position: absolute;
 	z-index: 50;
