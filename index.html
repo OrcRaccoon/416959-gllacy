@@ -50,7 +50,9 @@
    					</a>
    					<div class="search-form_wrap">
    						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-   							<input type="search" name="search" id="search-form-id" placeholder="Что ищем?">
+   								<input class="search-input" type="search" id="search" name="search" placeholder="Что ищем?">
+   								<label class="search-hint" for="search">Что ищем?
+   							</label>
    						</form>
    					</div>
    				</div>
@@ -62,8 +64,12 @@
    					</a>
    					<div class="login-form_wrap">
    						<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
-   							<input type="email" name="email" id="enter-email" placeholder="Электронная почта">
-   							<input type="password" name="password" id="enter-password" placeholder="Пароль">
+
+   							<input class="email-input" type="email" name="email" id="enter-email" placeholder="Электронная почта">
+   							<label class="email-hint" for="enter-email">Электронная почта</label>
+
+   							<input class="password-input" type="password" name="password" id="enter-password" placeholder="Пароль">
+   							<label class="password-hint" for="enter-password">Пароль</label>
 
    							<button class="login-btn btn" type="submit">Войти</button>
    							<a class="login-forgotten" href="#">Забыли пароль?</a>

@@ -70,14 +70,12 @@ p {
 	background-position: top center;
 }
 /*для предзагрузки слайдеров*/
-.site-wrapper:before, 
-.site-wrapper:after {
+.site-wrapper:before, .site-wrapper:after {
 	visibility: hidden;
 
 	content: "";
 }
-.site-wrapper:before, 
-.site-wrapper:after {
+.site-wrapper:before, .site-wrapper:after {
 	background-image: url(../img/bg-ice-2.png);
 }
 .site-wrapper:after {
@@ -293,40 +291,61 @@ p {
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 .user-block input {
-	display: block;
+	position: relative;
 
 	box-sizing: border-box;
 	height: 44px;
-	padding: 0;
+	/*оптимизировать под фаэр*/
 	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 13px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 13px;
 
-	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 24px;
 
+	text-overflow: ellipsis;
+
 	color: #323232;
-	border: 1px solid rgb(211, 211, 210);
+	border: none;
+	border: 1px solid #d3d3d2;
 	border-radius: 5px;
-	background-color: white;
+	outline: none;
 }
 
-.user-block input::-webkit-input-placeholder {
-	height: 44px;
+.user-block input:hover {
+	border: 2px solid #c7c6c5;
+	outline: none;
+}
+.user-block input:focus {
+	border: 2px solid #8fbdec;
+	outline: none;
+}
+.user-block label {
+	position: absolute;
 
-	font-family: Roboto;
-	font-size: 16px;
+	display: none;
+
+	font-size: 11px;
+
+	color: #5b9ddf;
+}
+.user-block input::-webkit-input-placeholder {
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
 
 	color: #999999;
 }
 .user-block input::-moz-placeholder {
-	height: 44px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
 
-	font-family: Roboto;
+	color: #999999;
+}
+.user-block input:-moz-placeholder {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
@@ -334,24 +353,17 @@ p {
 	color: #999999;
 }
 .user-block input:-ms-input-placeholder {
-	height: 44px;
-
-	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 
 	color: #999999;
 }
-/*Стилизация состояний input*/
-.user-block input:hover {
-	border: 2px solid rgba(154, 154, 154, 0.52);
-}
 .user-block input:focus {
 	border: 2px solid rgba(46, 136, 228, 0.52); 
 }
 
-/*Стилизация состояний placeholder*/
+/*Стилизация состояний placeholder, убрать его, если в фокусе*/
 .user-block input:focus::-webkit-input-placeholder {
 	color: transparent;
 }
@@ -361,7 +373,6 @@ p {
 .user-block input:focus:-ms-input-placeholder {
 	color: transparent;
 }
-
 
 /*начало разделов*/
 .user-block-item {
@@ -378,12 +389,7 @@ p {
 .user-block-item a {
 	border: none;
 }
-/*потом можно будет убрать*/
-.user-block-item a:hover {
-	color: white;
-	border: none;
-}
-
+/*Поиск*/
 .user-block-item:nth-child(1) {
 	position: relative;
 
@@ -418,8 +424,10 @@ p {
 	background-color: rgba(255, 225, 225, 0.2);
 	background-position: 50% 50%;
 }
-
+/*Стилизация формы входа*/
 .user-block-item:nth-child(1) .search-form {
+	position: relative;
+
 	display: block;
 
 	box-sizing: border-box;
@@ -430,12 +438,23 @@ p {
 	padding-bottom: 20px;
 	padding-left: 15px;
 }
-.search-form input {
-	width: 311px;
+.search-input {
+	width: 312px;
 }
-.search-form input[placeholder] {
-	/*padding-left: 13px;*/
+.search-hint {
+	top: 5px;
+	left: 27px;
 }
+.search-input:focus+ .search-hint {
+	display: block;
+}
+.search-input:not(:placeholder-shown)+ .search-hint {
+	color: #9a9a9a;
+}
+.search-input:not(focus):not(:placeholder-shown) {
+	border: 1px solid rgba(178, 178, 178, 0.52);
+}
+/*Состояния иконки Поиска*/
 .user-block-item:nth-child(1):hover .search-link {
 	background: url("../img/loop-hover.png") no-repeat;
 	background-color: white;
@@ -445,6 +464,7 @@ p {
 .user-block-item:nth-child(1):hover .search-form_wrap {
 	display: block;
 }
+
 /*Вход*/
 .user-block-item:nth-child(2) {
 	position: relative;
@@ -492,6 +512,8 @@ p {
 	background-position: -68px -499px;
 }
 .user-block-item:nth-child(2) .login-form {
+	position: relative;
+
 	box-sizing: border-box;
 	width: 275px;
 	margin-top: 4px;
@@ -501,14 +523,42 @@ p {
 	padding-left: 17px;
 }
 
-.login-form input {
+.email-input {
 	box-sizing: border-box;
 	width: 240px;
-	height: 44px;
 	margin-bottom: 20px;
 }
-.login-form input[placeholder] {
-	padding-left: 13px;
+
+.email-hint {
+	top: 5px;
+	left: 34px;
+}
+.email-input:focus+ .email-hint {
+	display: block;
+}
+.email-input:not(:placeholder-shown)+ .email-hint {
+	color: #9a9a9a;
+}
+.email-input:not(focus):not(:placeholder-shown) {
+	border: 1px solid rgba(178, 178, 178, 0.52);
+}
+.password-input {
+	box-sizing: border-box;
+	width: 240px;
+	margin-bottom: 20px;
+}
+.password-hint {
+	top: 69px;
+	left: 34px;
+}
+.password-input:focus+ .password-hint {
+	display: block;
+}
+.password-input:not(:placeholder-shown)+ .password-hint {
+	color: #9a9a9a;
+}
+.password-input:not(focus):not(:placeholder-shown) {
+	border: 1px solid rgba(178, 178, 178, 0.52);
 }
 .login-btn {
 	float: left;
@@ -537,8 +587,7 @@ p {
 	color: rgb(50, 50, 50);
 	border: none;
 }
-.login-form a:hover, 
-.login-form a:active {
+.login-form a:hover, .login-form a:active {
 	color: #e84d37;
 	border: none; 
 }
