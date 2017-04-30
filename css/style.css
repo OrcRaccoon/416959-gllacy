@@ -1960,7 +1960,51 @@ border: none;
 .pagination li {
 	display: inline-block;
 	vertical-align: top;
+	box-sizing: border-box;
+	border-radius: 100%;
+
 }
+.pagination a {
+	display: block;
+	box-sizing: border-box;
+	width: 25px;
+	height: 26px;
+	border: none;
+	border-radius: 100%;
+	font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+color: white;
+padding-top: 4px;
+padding-left: 8px;
+	background-color: transparent;
+
+}
+.pagination .current-page {
+	color: black;
+	background-color: white;
+}
+.pagination .previous-page {
+	background-image: url(../img/arrow-left.png);
+	background-repeat: no-repeat;
+	background-position: 4px;
+
+}
+.pagination .next-page {
+	background-image: url(../img/arrow-right.png);
+	background-repeat: no-repeat;
+	background-position: 14px;
+
+}
+.pagination li:not(:first-child):not(:last-child):hover {
+background-color: rgba(255, 255, 255, 0.2);
+} 
+.pagination li:not(:first-child):not(:last-child):active a {
+background-color: white;
+color: black;
+} 
+
+
 .catalog-footer {
 	margin-top: 101px;
 
