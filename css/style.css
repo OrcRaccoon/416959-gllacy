@@ -1253,15 +1253,37 @@ article:nth-child(4n) {
 .mailout {
 	float: right;
 
-	padding-top: 27px;
-	padding-left: 20px;
+	padding-top: 34px;
+	padding-left: 27px;
+	padding-right: 27px;
 
 	color: rgb(90, 90, 90);
 	background-image: url(../img/bg-mail.jpg);
 	background-repeat: no-repeat;
 }
 .mailout-description {
-	margin-bottom: 10px;
+	color: #5a5a5a;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+	margin-bottom: 38px;
+
+}
+.mailout-form .mailout-btn {
+	float: right;
+	box-sizing: border-box;
+width: 129px;
+height: 44px;
+
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+
+padding-right: 19px;
+padding-left: 19px;
+padding-top: 10px;
+
+
 }
 .mailout-form input {
 	width: 368px;
