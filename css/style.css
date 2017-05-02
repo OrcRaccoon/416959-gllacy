@@ -948,8 +948,15 @@ p {
 	background-color: #9d8b84;
 	background-image: url(../img/bg-ice-3.png);
 }
-#btn-1:checked~ .site-wrapper label[for="btn-1"], #btn-2:checked~ .site-wrapper label[for="btn-2"], #btn-3:checked~ .site-wrapper label[for="btn-3"] {
+#btn-1:checked~ .site-wrapper label[for="btn-1"], 
+#btn-2:checked~ .site-wrapper label[for="btn-2"], 
+#btn-3:checked~ .site-wrapper label[for="btn-3"] {
 	background-color: #ffffff;
+}
+.site-wrapper label[for="btn-1"]:hover,
+.site-wrapper label[for="btn-2"]:hover,
+.site-wrapper label[for="btn-3"]:hover {
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 /*баннеры*/
@@ -1009,7 +1016,7 @@ p {
 
 	background-image: url(../img/bg-chocolate.jpg);
 }
-/*карточки товаров, почти попиксельно*/
+/*карточки товаров*/
 .hits {
 	position: relative;
 
