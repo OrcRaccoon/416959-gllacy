@@ -340,7 +340,7 @@ p {
 	color: #999999;
 }
 .user-block input::-moz-placeholder {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
 	font-family: Roboto;
@@ -348,14 +348,14 @@ p {
 	color: #999999;
 }
 .user-block input:-moz-placeholder {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
 
 	color: #999999;
 }
 .user-block input:-ms-input-placeholder {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
 	font-family: Roboto;
@@ -1377,33 +1377,9 @@ iframe {
 	font-weight: 700;
 	line-height: 24px;
 }
+/*модальное окно*/
 
-.feedback-form-modal span {
-	display: block;
-	font-family: Roboto;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 28px;
-	margin-bottom: 20px;
-}
-
-.feedback-form-modal textarea {
-	width: 428px;
-	min-height: 155px;
-
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-
-	color: rgb(153, 153, 153);
-	border: 1px solid rgba(178, 178, 178, 0.52);
-	border-radius: 5px;
-	background-color: white;
-}
-/**/
 .feedback-modal-wrapper form {
-
   width: 477px;
 	min-height: 442px;
 	box-sizing: border-box;
@@ -1413,14 +1389,34 @@ iframe {
 	right: 0;
 	margin: 5% auto;
 	padding-top: 16px;
-	padding-bottom: ;
+	padding-bottom: 24px;
 	padding-left: 23px;
-	padding-right: ;
+	padding-right: 23px;
 
 	color: rgb(50, 50, 50);
 	border-radius: 10px;
 	background-color: rgb(248, 247, 244);
 }
+.feedback-modal-wrapper span {
+	display: block;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+.feedback-modal-wrapper .reg-btn {
+float: right;
+width: 139px;
+min-height: 44px;
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+box-sizing: border-box;
+padding-top: 9px;
+padding-left: 19px;
+}
+
 .feedback-modal-wrapper input {
   position: relative;
 
@@ -1446,12 +1442,40 @@ iframe {
   border-radius: 5px;
   outline: none;
 }
+.feedback-modal-wrapper textarea {
+	position: relative;
 
-.feedback-modal-wrapper input:hover {
+	box-sizing: border-box;
+	width: 428px;
+	min-height: 155px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin-bottom: 25px;
+
+   
+    padding-left: 13px;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+
+	text-overflow: ellipsis;
+
+	color: #323232;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
+	outline: none;
+	background-color: white;
+}
+.feedback-modal-wrapper input:hover,
+.feedback-modal-wrapper textarea:hover {
   border: 2px solid #c7c6c5;
   outline: none;
 }
-.feedback-modal-wrapper input:focus {
+
+
+.feedback-modal-wrapper input:focus,
+.feedback-modal-wrapper textarea:focus {
   border: 2px solid #8fbdec;
   outline: none;
 }
@@ -1464,14 +1488,16 @@ iframe {
 
   color: #5b9ddf;
 }
-.feedback-modal-wrapper input::-webkit-input-placeholder {
-  font-size: 14px;
+.feedback-modal-wrapper input::-webkit-input-placeholder,
+.feedback-modal-wrapper textarea::-webkit-input-placeholder {
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 font-family: Roboto;
   color: #999999;
 }
-.feedback-modal-wrapper input::-moz-placeholder {
+.feedback-modal-wrapper input::-moz-placeholder,
+.feedback-modal-wrapper textarea::-moz-placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1479,7 +1505,8 @@ font-family: Roboto;
 
   color: #999999;
 }
-.feedback-modal-wrapper input:-moz-placeholder {
+.feedback-modal-wrapper input:-moz-placeholder,
+.feedback-modal-wrapper textarea:-moz-placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1487,7 +1514,8 @@ font-family: Roboto;
 
   color: #999999;
 }
-.feedback-modal-wrapper input:-ms-input-placeholder {
+.feedback-modal-wrapper input:-ms-input-placeholder,
+.feedback-modal-wrapper textarea:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1495,9 +1523,21 @@ font-family: Roboto;
 
   color: #999999;
 }
-.feedback-modal-wrapper input:focus {
-  border: 2px solid rgba(46, 136, 228, 0.52); 
+
+.feedback-additional-hint {
+	  top: 177px;
+  left: 36px;
 }
+.feedback-additional-texarea:focus+ .feedback-additional-hint {
+  display: block;
+}
+.feedback-additional-texarea:not(:placeholder-shown)+ .feedback-additional-hint {
+  color: #9a9a9a;
+}
+.feedback-additional-texarea:not(focus):not(:placeholder-shown) {
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
 .name-hint {
 	  top: 50px;
   left: 36px;
@@ -1526,13 +1566,16 @@ font-family: Roboto;
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
 /*Стилизация состояний placeholder, убрать его, если в фокусе*/
-.feedback-modal-wrapper input:focus::-webkit-input-placeholder {
+.feedback-modal-wrapper input:focus::-webkit-input-placeholder,
+.feedback-modal-wrapper textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
-.feedback-modal-wrapper input:focus::-moz-placeholder {
+.feedback-modal-wrapper input:focus::-moz-placeholder,
+.feedback-modal-wrapper textarea:focus::-moz-placeholder {
   color: transparent;
 }
-.feedback-modal-wrapper input:focus:-ms-input-placeholder {
+.feedback-modal-wrapper input:focus:-ms-input-placeholder,
+.feedback-modal-wrapper textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
@@ -1562,31 +1605,25 @@ font-family: Roboto;
 
 	pointer-events: auto;
 }
-.close {
+.feedback-modal-wrapper .close {
+	display: block;
 	position: absolute;
-	top: -10px;
-	right: -12px;
+	top: 15px;
+	right: 13px;
 
-	width: 24px;
-
-	font-weight: bold;
-	line-height: 25px;
+		font-family: Verdana;
+	font-size: 30px;
+	font-weight: 200;
+	line-height: 16px;
 
 	text-align: center;
 	text-decoration: none;
 
-	color: #FFFFFF;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	background: #606061;
-	-webkit-box-shadow: 1px 1px 3px #000000;
-	-moz-box-shadow: 1px 1px 3px #000000;
-	box-shadow: 1px 1px 3px #000000;
+	color: black;
 }
 
 .close:hover { 
-	background: #00d9ff; 
+	border: none;
 }
 /*footer*/
 footer {
