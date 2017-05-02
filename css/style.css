@@ -335,6 +335,7 @@ p {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
+	font-family: Roboto;
 
 	color: #999999;
 }
@@ -342,6 +343,7 @@ p {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
+	font-family: Roboto;
 
 	color: #999999;
 }
@@ -356,6 +358,7 @@ p {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
+	font-family: Roboto;
 
 	color: #999999;
 }
@@ -1374,41 +1377,16 @@ iframe {
 	font-weight: 700;
 	line-height: 24px;
 }
-.feedback-form-modal {
-	width: 477px;
-	height: 442px;
-	position: relative;
-	z-index: 99999;
-	top: 0;
-	right: 0;
-	margin: 5% auto;
 
-	color: rgb(50, 50, 50);
-	border-radius: 10px;
-	background-color: rgb(248, 247, 244);
-}
 .feedback-form-modal span {
+	display: block;
 	font-family: Roboto;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 28px;
+	margin-bottom: 20px;
 }
-.feedback-form-modal input {
-	width: 267px;
-	min-height: 44px;
 
-	border: 1px solid rgba(178, 178, 178, 0.52);
-	border-radius: 5px;
-	background-color: white;
-}
-.feedback-form-modal input::placeholder {
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-
-	color: rgb(153, 153, 153);
-}
 .feedback-form-modal textarea {
 	width: 428px;
 	min-height: 155px;
@@ -1423,43 +1401,188 @@ iframe {
 	border-radius: 5px;
 	background-color: white;
 }
+/**/
+.feedback-modal-wrapper form {
+
+  width: 477px;
+	min-height: 442px;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 99999;
+	top: 0;
+	right: 0;
+	margin: 5% auto;
+	padding-top: 16px;
+	padding-bottom: ;
+	padding-left: 23px;
+	padding-right: ;
+
+	color: rgb(50, 50, 50);
+	border-radius: 10px;
+	background-color: rgb(248, 247, 244);
+}
+.feedback-modal-wrapper input {
+  position: relative;
+
+  box-sizing: border-box;
+  height: 44px;
+  width: 267px;
+  
+  padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 13px;
+    margin-bottom: 20px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+
+  text-overflow: ellipsis;
+
+  color: #323232;
+  border: none;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  outline: none;
+}
+
+.feedback-modal-wrapper input:hover {
+  border: 2px solid #c7c6c5;
+  outline: none;
+}
+.feedback-modal-wrapper input:focus {
+  border: 2px solid #8fbdec;
+  outline: none;
+}
+.feedback-modal-wrapper label {
+  position: absolute;
+
+  display: none;
+
+  font-size: 11px;
+
+  color: #5b9ddf;
+}
+.feedback-modal-wrapper input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+font-family: Roboto;
+  color: #999999;
+}
+.feedback-modal-wrapper input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Roboto;
+
+  color: #999999;
+}
+.feedback-modal-wrapper input:-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Roboto;
+
+  color: #999999;
+}
+.feedback-modal-wrapper input:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Roboto;
+
+  color: #999999;
+}
+.feedback-modal-wrapper input:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52); 
+}
+.name-hint {
+	  top: 50px;
+  left: 36px;
+}
+.name-input:focus+ .name-hint {
+  display: block;
+}
+.name-input:not(:placeholder-shown)+ .name-hint {
+  color: #9a9a9a;
+}
+.name-input:not(focus):not(:placeholder-shown) {
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.reg-email-hint {
+	  top: 113px;
+  left: 36px;
+}
+.reg-email-input:focus+ .reg-email-hint {
+  display: block;
+}
+.reg-email-input:not(:placeholder-shown)+ .reg-email-hint {
+  color: #9a9a9a;
+}
+.reg-email-input:not(focus):not(:placeholder-shown) {
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+/*Стилизация состояний placeholder, убрать его, если в фокусе*/
+.feedback-modal-wrapper input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.feedback-modal-wrapper input:focus::-moz-placeholder {
+  color: transparent;
+}
+.feedback-modal-wrapper input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+
 /*позиционирование модального*/
-.modalDialog {
+.feedback-modal-wrapper {
 	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
+	z-index: 99999;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
+
+	display: none;
+
+	font-family: "Roboto"
+
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
-	display: none;
 	pointer-events: none;
+
+	background: rgba(0,0,0,0.3);
 }
-.modalDialog:target {
+.feedback-modal-wrapper:target {
 	display: block;
+
 	pointer-events: auto;
 }
 .close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
 	position: absolute;
-	right: -12px;
-	text-align: center;
 	top: -10px;
+	right: -12px;
+
 	width: 24px;
-	text-decoration: none;
+
 	font-weight: bold;
+	line-height: 25px;
+
+	text-align: center;
+	text-decoration: none;
+
+	color: #FFFFFF;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+	background: #606061;
+	-webkit-box-shadow: 1px 1px 3px #000000;
+	-moz-box-shadow: 1px 1px 3px #000000;
+	box-shadow: 1px 1px 3px #000000;
 }
 
 .close:hover { 

@@ -294,14 +294,19 @@
 				<b>8 812 450-25-25</b>
 				<p>(с 10 до 20 ежедневно)</p>
 
-			<a href="#openModal" class="feedback-form-btn btn">Форма обратной связи</a>
-			<div class="modalDialog" id="openModal">
+			<a href="#feedback-modal-open" class="feedback-form-btn btn">Форма обратной связи</a>
+			<div class="feedback-modal-wrapper" id="feedback-modal-open">
 					<form class="feedback-form-modal" action="https://echo.htmlacademy.ru" method="get">
 
 						<a href="#close" title="Закрыть" class="close">X</a>
 						<span>Мы обязательно вам ответим!</span>
-						<input type="text" name="name" id="name" placeholder="Как вас зовут?">
-						<input type="email" name="email" id="reg-email" placeholder="Ваша почта для ответа?">
+
+						<input type="text" name="name" id="name" placeholder="Как вас зовут?" class="name-input">
+						<label for="name" class="name-hint">Как вас зовут?</label>
+
+						<input type="email" name="email" id="reg-email" placeholder="Ваша почта для ответа?" class="reg-email-input">
+						<label for="reg-email" class="reg-email-hint">Ваша почта для ответа?</label>
+
 						<textarea rows="" wrap="" name="">Напишите что-нибудь...</textarea>
 						<button type="submit" class="reg-btn btn">Отправить</button>
 					</form>
@@ -310,7 +315,7 @@
 		</div>
 			
 	</section> 
-	
+
 	<footer class="content-wrapper clearfix">
 		<section class="footer-social">
 			<!-- Тут видимо магия либо с иконочным фрифтом, либо со спрайтами, но для меня это пока слишком сильное колдунство, поэтому копирую из демки барбершопа, но с img -->
