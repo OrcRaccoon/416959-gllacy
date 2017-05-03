@@ -1229,7 +1229,7 @@ article:nth-child(4n) {
 .blog {
 	float: left;
 
-	padding-top: 26px;
+	padding-top: 23px;
 	padding-left: 20px;
 
 	color: rgb(50, 50, 50);
@@ -1244,6 +1244,7 @@ article:nth-child(4n) {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px;
+	margin-bottom: 4px;
 }
 .blog-news-link {
 	display: block;
@@ -1256,10 +1257,15 @@ article:nth-child(4n) {
 	line-height: 30px;
 
 	text-decoration: underline;
+	cursor: pointer;
 
 	color: rgb(50, 50, 50);
 }
-
+.blog a:hover,
+.blog a:active {
+	color: #e84d37;
+	border: none; 
+}
 .mailout {
 	float: right;
 
@@ -1270,13 +1276,14 @@ article:nth-child(4n) {
 	color: rgb(90, 90, 90);
 	background-image: url(../img/bg-mail.jpg);
 	background-repeat: no-repeat;
+	/*background-size: cover;*/
 }
 .mailout-description {
 	color: #5a5a5a;
 font-size: 16px;
 font-weight: 400;
 line-height: 22px;
-	margin-bottom: 38px;
+	margin-bottom: 36px;
 
 }
 .mailout-form .mailout-btn {
@@ -1285,6 +1292,8 @@ line-height: 22px;
 width: 129px;
 height: 44px;
 
+color: #fefefe;
+font-family: Roboto;
 font-size: 18px;
 font-weight: 700;
 line-height: 24px;
@@ -1292,7 +1301,13 @@ line-height: 24px;
 padding-right: 19px;
 padding-left: 19px;
 padding-top: 10px;
+padding-bottom: 10px;
 
+}
+.mailout-form {
+	box-sizing: border-box;
+	position: relative;
+	min-height: 44px;
 
 }
 .mailout-form input {
@@ -1302,18 +1317,94 @@ padding-top: 10px;
 	border: 1px solid rgba(178, 178, 178, 0.52);
 	border-radius: 5px;
 	background-color: white;
+
+	 position: relative;
+
+  box-sizing: border-box;
+
+  
+  padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 13px;
+
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+
+  text-overflow: ellipsis;
+
+  color: #323232;
+  border: none;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  outline: none;
+}
+.mailout-form input:hover {
+  border: 2px solid #c7c6c5;
+  outline: none;
 }
 
-.mailout-form input::placeholder {
-	padding-left: 10px;
-
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-
-	color: rgb(153, 153, 153);
+.mailout-form input:focus {
+  border: 2px solid #8fbdec;
+  outline: none;
 }
+.mailout-form label {
+  position: absolute;
+
+  display: none;
+
+  font-size: 11px;
+
+  color: #5b9ddf;
+}
+.mailout-form input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+font-family: Roboto;
+  color: #999999;
+}
+.mailout-form input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Roboto;
+
+  color: #999999;
+}
+.mailout-form input:-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Roboto;
+
+  color: #999999;
+}
+.mailout-form input:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Roboto;
+
+  color: #999999;
+}
+.mailout-hint {
+	  top: -14px;
+  left: 13px;
+}
+.mailout-input:focus+ .mailout-hint {
+  display: block;
+}
+.mailout-input:not(:placeholder-shown)+ .mailout-hint {
+  color: #9a9a9a;
+}
+.mailout-input:not(focus):not(:placeholder-shown) {
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+
 .feedback {
 	position: relative;
 }
@@ -1330,7 +1421,7 @@ padding-top: 10px;
 	background-image: url(../img/map-pin.jpg);
 	background-repeat: no-repeat;
 }
-iframe {
+.map iframe {
 	width: 100%;
 	min-height: 430px;
 
@@ -2292,7 +2383,5 @@ color: black;
 
 
 .catalog-footer {
-
-
 	border-top: 1px solid #aebac7;
 }
