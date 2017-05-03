@@ -492,7 +492,7 @@ p {
 	min-width: 92px;
 	min-height: 32px;
 	padding: 7px;
-	padding-right: 10px;
+	padding-right: 17px;
 	padding-left: 44px;
 
 	text-align: center;
@@ -859,7 +859,7 @@ p {
 /*Main*/
 /*Sliders*/
 .slider {
-	margin-bottom: 36px;
+	margin-bottom: 40px;
 	padding-top: 315px;
 
 	text-align: center;
@@ -961,7 +961,7 @@ p {
 
 /*баннеры*/
 .main-offers {
-	margin-bottom: 40px;
+	margin-bottom: 39px;
 }
 .offer h3 {
 	margin: 0;
@@ -969,7 +969,7 @@ p {
 .offer {
 	box-sizing: border-box;
 	width: 560px;
-	min-height: 230px;
+	min-height: 228px;
 	padding-top: 15px;
 	padding-left: 19px;
 
@@ -990,6 +990,7 @@ p {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 22px;
+	width: 513px;
 }
 .offer-left {
 	position: relative;
@@ -1029,7 +1030,7 @@ article {
 	vertical-align: top;
 
 	width: 267px;
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 	padding-right: 26px;
 
 	font-size: 16px;
@@ -1216,7 +1217,7 @@ article:nth-child(4n) {
 }
 
 .additional-options {
-	margin-bottom: 40px;
+	margin-bottom: 39px;
 }
 .options {
 	box-sizing: border-box;
@@ -1435,10 +1436,10 @@ font-family: Roboto;
 	box-sizing: border-box;
 	width: 302px;
 	min-height: 305px;
-	padding-top: 31px;
+	padding-top: 26px;
 	padding-right: 24px;
 	padding-bottom: 31px;
-	padding-left: 24px;
+	padding-left: 25px;
 
 	font-size: 0;
 
@@ -1453,10 +1454,15 @@ font-family: Roboto;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
+	margin: 0;
+	margin-bottom: 6px;
+
 }
 .feedback-contacts p:first-child {
 	width: 150px;
+	margin-bottom: 2px;
 }
+
 .feedback-contacts b {
 	display: inline-block;
 	vertical-align: top;
@@ -1464,16 +1470,21 @@ font-family: Roboto;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
+
 }
 .feedback-contacts .address {
-	padding-bottom: 20px;
+margin-bottom: 17px;
 }
-.feedback-contacts .feedback-form-btn {
-	margin-top: 27px;
 
+.feedback-contacts .feedback-form-btn {
+margin-top: 19px;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
+
+	width: 252px;
+	box-sizing: border-box;
+	padding-left: 28px;
 }
 /*модальное окно*/
 
@@ -1729,23 +1740,27 @@ footer {
 }
 .footer-social {
 	float: left;
-
+font-size: 0;
 	width: 400px;
-	padding-top: 35px;
+	padding-top: 31px;
 }
 .footer-social .social-btn {
 	display: inline-block;
 	vertical-align: top;
 
 	margin: 0;
-	margin-right: 10px;
+	margin-right: 11px;
 
 	border: none;
+
+	width: 38px;
+	height: 38px;
+
+	
 }
 .twitter {
 	width: 38px;
 	height: 38px;
-
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -5px -389px;
 }
