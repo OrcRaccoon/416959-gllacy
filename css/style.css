@@ -1896,6 +1896,7 @@ footer {
 .footer-docs li:first-child:before {
 	position: absolute;
 	left: -22px;
+	top: 3px;
 
 	width: 15px;
 	height: 13px;
