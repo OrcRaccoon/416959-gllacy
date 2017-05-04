@@ -405,14 +405,14 @@ padding-top: 11px;
 	border: none;
 }
 /*Поиск*/
-.user-block-item:nth-child(1) {
+.user-block-item-search {
 	position: relative;
 
 	box-sizing: border-box;
 	width: 32px;
 	height: 32px;
 }
-.user-block-item:nth-child(1) .search-form_wrap {
+.user-block-item-search .search-form_wrap {
 	position: absolute;
 	z-index: 8;
 	top: 32px;
@@ -422,7 +422,7 @@ padding-top: 11px;
 
 	width: 341px;
 }
-.user-block-item:nth-child(1) .search-link {
+.user-block-item-search .search-link {
 	display: block;
 
 	box-sizing: border-box;
@@ -440,7 +440,7 @@ padding-top: 11px;
 	background-position: 50% 50%;
 }
 /*Стилизация формы входа*/
-.user-block-item:nth-child(1) .search-form {
+.user-block-item-search .search-form {
 	position: relative;
 
 	display: block;
@@ -470,24 +470,24 @@ padding-top: 11px;
 	border: 1px solid rgba(178, 178, 178, 0.52);
 }
 /*Состояния иконки Поиска*/
-.user-block-item:nth-child(1):hover .search-link {
+.user-block-item-search:hover .search-link {
 	background: url("../img/loop-hover.png") no-repeat;
 	background-color: white;
 	background-position: 50% 50%;
 }
 
-.user-block-item:nth-child(1):hover .search-form_wrap {
+.user-block-item-search:hover .search-form_wrap {
 	display: block;
 }
 
 /*Вход*/
-.user-block-item:nth-child(2) {
+.user-block-item-login {
 	position: relative;
 	z-index: 2;
 
 	min-height: 32px;
 }
-.user-block-item:nth-child(2) .login-form_wrap {
+.user-block-item-login .login-form_wrap {
 	position: absolute;
 	z-index: 8;
 	top: 32px;
@@ -497,7 +497,7 @@ padding-top: 11px;
 
 	width: 275px;
 }
-.user-block-item:nth-child(2) .login-link {
+.user-block-item-login .login-link {
 	display: block;
 
 	box-sizing: border-box;
@@ -514,7 +514,7 @@ padding-top: 11px;
 	border-radius: 16px;
 	background-color: rgba(255, 225, 225, 0.2);
 }
-.user-block-item:nth-child(2) .login-link:before {
+.user-block-item-login .login-link:before {
 	position: absolute;
 	left: 16px;
 
@@ -526,7 +526,7 @@ padding-top: 11px;
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -68px -499px;
 }
-.user-block-item:nth-child(2) .login-form {
+.user-block-item-login .login-form {
 	position: relative;
 
 	box-sizing: border-box;
@@ -606,19 +606,19 @@ padding-top: 11px;
 	color: #e84d37;
 	border: none; 
 }
-.user-block-item:nth-child(2):hover .login-link {
+.user-block-item-login:hover .login-link {
 	color: black;
 	background-color: white;
 }
-.user-block-item:nth-child(2):hover .login-link:before {
+.user-block-item-login:hover .login-link:before {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -68px -475px;
 }
-.user-block-item:nth-child(2):hover .login-form_wrap {
+.user-block-item-login:hover .login-form_wrap {
 	display: block;
 }
 
-.user-block-item:nth-child(3) {
+.user-block-item-basket {
 	position: relative;
 
 	box-sizing: border-box;
@@ -626,14 +626,14 @@ padding-top: 11px;
 	height: 32px;
 }
 /*Корзина*/
-.user-block-item:nth-child(3) {
+.user-block-item-basket {
 	position: relative;
 
 	box-sizing: border-box;
 	width: 117px;
 	height: 32px;
 }
-.user-block-item:nth-child(3) .basket-link {
+.user-block-item-basket .basket-link {
 	position: relative;
 
 	display: block;
@@ -653,7 +653,7 @@ padding-top: 11px;
 	background-color: rgba(255, 225, 225, 0.2);
 }
 
-.user-block-item:nth-child(3) .basket-link:before {
+.user-block-item-basket .basket-link:before {
 	position: absolute;
 	left: 16px;
 
@@ -665,7 +665,7 @@ padding-top: 11px;
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -71px -80px;
 }
-.user-block-item:nth-child(3) .basket-link-hover {
+.user-block-item-basket .basket-link-hover {
 	position: absolute;
 	z-index: 50;
 	top: 0;
@@ -674,7 +674,7 @@ padding-top: 11px;
 	display: none;
 }
 
-.user-block-item:nth-child(3) .basket-link-hover:before {
+.user-block-item-basket .basket-link-hover:before {
 	position: absolute;
 	left: 16px;
 
@@ -686,7 +686,7 @@ padding-top: 11px;
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -42px -475px;
 }
-.user-block-item:nth-child(3) .basket-content {
+.user-block-item-basket .basket-content {
 	position: absolute;
 	z-index: 10;
 	top: 32px;
@@ -708,7 +708,7 @@ padding-top: 11px;
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
-.user-block-item:nth-child(3) .basket-content:before {
+.user-block-item-basket .basket-content:before {
 	position: absolute;
 	z-index: 12;
 	top: -4px;
@@ -722,7 +722,7 @@ padding-top: 11px;
 	content: "";
 }
 
-.user-block-item:nth-child(3) .basket-table {
+.user-block-item-basket .basket-table {
 	box-sizing: border-box;
 	margin-bottom: 4px;
 
@@ -829,15 +829,15 @@ padding-top: 11px;
 	color: #fefefe;
 }
 
-.user-block-item:nth-child(3):hover .basket-link {
+.user-block-item-basket:hover .basket-link {
 	color: black;
 	background-color: white;
 }
-.user-block-item:nth-child(3):hover .basket-link-hover {
+.user-block-item-basket:hover .basket-link-hover {
 	display: block;
 }
 
-.user-block-item:nth-child(3):hover .basket-content {
+.user-block-item-basket:hover .basket-content {
 	display: block;
 }
 /*Время и телефон*/
@@ -1976,7 +1976,7 @@ footer {
 	color: white;
 }
 
-.user-block-item:nth-child(3) .basket-link_catalog {
+.user-block-item-basket .basket-link_catalog {
 	position: absolute;
 	z-index: 50;
 	top: 0;
@@ -1988,7 +1988,7 @@ footer {
 	background-color: #ffffff;
 }
 
-.user-block-item:nth-child(3) .basket-link_catalog:before {
+.user-block-item-basket .basket-link_catalog:before {
 	position: absolute;
 	left: 16px;
 
