@@ -12,9 +12,6 @@ body {
 body > input[type="radio"] {
 	display: none;
 }
-/*p {
-	margin: 0;
-}*/
 a {
 	text-decoration: none;
 
@@ -344,10 +341,13 @@ a:active {
 .user-block label {
 	position: absolute;
 
-	display: none;
+	visibility: hidden;
 
 	font-size: 11px;
 
+	transition: visibility 0s, opacity 0.5s linear;
+
+	opacity: 0;
 	color: #5b9ddf;
 }
 .user-block input::-webkit-input-placeholder {
@@ -468,7 +468,9 @@ a:active {
 	left: 27px;
 }
 .search-input:focus + .search-hint {
-	display: block;
+	visibility: visible;
+
+	opacity: 1;
 }
 .search-input:not(:placeholder-shown) + .search-hint {
 	color: #9a9a9a;
@@ -556,7 +558,9 @@ a:active {
 	left: 34px;
 }
 .email-input:focus + .email-hint {
-	display: block;
+	visibility: visible;
+
+	opacity: 1;
 }
 .email-input:not(:placeholder-shown) + .email-hint {
 	color: #9a9a9a;
@@ -574,7 +578,9 @@ a:active {
 	left: 34px;
 }
 .password-input:focus + .password-hint {
-	display: block;
+	visibility: visible;
+
+	opacity: 1;
 }
 .password-input:not(:placeholder-shown) + .password-hint {
 	color: #9a9a9a;
@@ -660,7 +666,6 @@ a:active {
 	border-radius: 16px;
 	background-color: rgba(255, 225, 225, 0.2);
 }
-
 .user-block-item-basket .basket-link:before {
 	position: absolute;
 	left: 16px;
@@ -681,7 +686,6 @@ a:active {
 
 	display: none;
 }
-
 .user-block-item-basket .basket-link-hover:before {
 	position: absolute;
 	left: 16px;
@@ -729,7 +733,6 @@ a:active {
 
 	content: "";
 }
-
 .user-block-item-basket .basket-table {
 	box-sizing: border-box;
 	margin-bottom: 4px;
@@ -749,7 +752,6 @@ a:active {
 
 	color: black;
 }
-
 .basket-table .icecream-cost {
 	color: #999999;
 }
@@ -836,7 +838,6 @@ a:active {
 
 	color: #fefefe;
 }
-
 .user-block-item-basket:hover .basket-link {
 	color: black;
 	background-color: white;
@@ -868,7 +869,6 @@ a:active {
 	font-weight: 700;
 	line-height: 16px;
 }
-
 .contact-info .phone {
 	display: block;
 
@@ -985,7 +985,6 @@ a:active {
 .main-offers {
 	margin-bottom: 39px;
 }
-
 .offer h3 {
 	margin: 0;
 }
@@ -1032,8 +1031,6 @@ a:active {
 	font-weight: 700;
 	line-height: 24px;
 }
-
-
 .offer-right {
 	position: relative;
 
@@ -1629,10 +1626,13 @@ article:nth-child(4n) {
 .feedback-modal-wrapper label {
 	position: absolute;
 
-	display: none;
+	visibility: hidden;
 
 	font-size: 11px;
 
+	transition: visibility 0s, opacity 0.5s linear;
+
+	opacity: 0;
 	color: #5b9ddf;
 }
 .feedback-modal-wrapper input::-webkit-input-placeholder,
@@ -1677,7 +1677,9 @@ article:nth-child(4n) {
 	left: 36px;
 }
 .feedback-additional-texarea:focus + .feedback-additional-hint {
-	display: block;
+	visibility: visible;
+
+	opacity: 1;
 }
 .feedback-additional-texarea:not(:placeholder-shown) + .feedback-additional-hint {
 	color: #9a9a9a;
@@ -1691,7 +1693,9 @@ article:nth-child(4n) {
 	left: 36px;
 }
 .name-input:focus + .name-hint {
-	display: block;
+	visibility: visible;
+
+	opacity: 1;
 }
 .name-input:not(:placeholder-shown) + .name-hint {
 	color: #9a9a9a;
@@ -1705,7 +1709,9 @@ article:nth-child(4n) {
 	left: 36px;
 }
 .reg-email-input:focus + .reg-email-hint {
-	display: block;
+	visibility: visible;
+
+	opacity: 1;
 }
 .reg-email-input:not(:placeholder-shown) + .reg-email-hint {
 	color: #9a9a9a;
