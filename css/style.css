@@ -12,6 +12,9 @@ body {
 body > input[type="radio"] {
 	display: none;
 }
+/*p {
+	margin: 0;
+}*/
 a {
 	text-decoration: none;
 
@@ -23,11 +26,6 @@ a:active {
 	color: #ffbc9e;
 	border-bottom: 1px solid #ffbc9e;
 }
-
-/*p {
-	margin: 0;
-}
-*/
 .btn {
 	display: inline-block;
 	vertical-align: top;
@@ -1172,7 +1170,7 @@ article:nth-child(4n) {
 	vertical-align: top;
 
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 
 	font-size: 24px;
 	font-weight: 543px;
