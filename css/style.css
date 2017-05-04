@@ -1408,7 +1408,15 @@ article:nth-child(4n) {
 .mailout-input:not(focus):not(:placeholder-shown) {
 	border: 1px solid rgba(178, 178, 178, 0.52);
 }
-
+.mailout-form input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+.mailout-form input:focus::-moz-placeholder {
+	color: transparent;
+}
+.mailout-form input:focus:-ms-input-placeholder {
+	color: transparent;
+}
 
 .feedback {
 	position: relative;
