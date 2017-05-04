@@ -1588,6 +1588,8 @@ article:nth-child(4n) {
 	border-radius: 5px;
 	outline: none;
 	background-color: white;
+
+	resize: none;
 }
 .feedback-modal-wrapper input:hover, .feedback-modal-wrapper textarea:hover {
 	border: 2px solid #c7c6c5;
