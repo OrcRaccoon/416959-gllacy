@@ -1317,14 +1317,9 @@ body .slider-input {
 	background-color: #f8f7f5;
 	background-image: url(../img/bg-mail.jpg);
 	background-repeat: no-repeat;
-	/*background-size: cover;*/
 }
 .options .mailout-description {
 	margin-bottom: 36px;
-overflow: auto;
-text-overflow: ellipsis;
-width: 506px;
-height: 65px;
 
 	font-size: 16px;
 	font-weight: 400;
