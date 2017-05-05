@@ -12,6 +12,7 @@ body {
 body > input[type="radio"] {
 	display: none;
 }
+
 a {
 	text-decoration: none;
 
@@ -1764,9 +1765,11 @@ a:active {
 
 	-webkit-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
-	pointer-events: none;
 
 	background: rgba(0,0,0,0.3);
+}
+.feedback-modal-wrapper-show {
+	display: block;
 }
 .feedback-modal-wrapper:target {
 	display: block;
