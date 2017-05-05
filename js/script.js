@@ -10,3 +10,10 @@
                 event.preventDefault();
                 popup.classList.remove("feedback-modal-wrapper-show");
             });
+            window.addEventListener("keydown", function(event) {
+                if (event.keyCode === 27) {
+                  if (popup.classList.contains("feedback-modal-wrapper-show")) {
+                    popup.classList.remove("feedback-modal-wrapper-show");
+                    }
+                }
+            });
