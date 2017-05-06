@@ -972,6 +972,11 @@ body .slider-input {
 .site-wrapper label[for="btn-3"]:hover {
 	background-color: rgba(255, 255, 255, 0.4);
 }
+.site-wrapper label[for="btn-1"]:active,
+.site-wrapper label[for="btn-2"]:active,
+.site-wrapper label[for="btn-3"]:active {
+	background-color: #ffffff;
+}
 /*баннеры*/
 .main-offers {
 	margin-bottom: 39px;
