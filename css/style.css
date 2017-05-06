@@ -1102,6 +1102,14 @@ body .slider-input {
 	position: relative;
 	z-index: 94;
 }
+.catalog-item:nth-child(n+14):nth-child(-n+32) {
+	position: relative;
+	z-index: 93;
+}
+.catalog-item:nth-child(n+15):nth-child(-n+34) {
+	position: relative;
+	z-index: 92;
+}
 .catalog-item-img {
 	position: relative;
 	z-index: 8;
