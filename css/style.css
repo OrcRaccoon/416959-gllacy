@@ -37,7 +37,6 @@ body .slider-input {
 	color: white;
 	border: none;
 	border-radius: 50px;
-	outline: none;
 	background-image: -webkit-linear-gradient(bottom, #ca3824 0%, #f26843 100%);
 	background-image:         linear-gradient(to top, #ca3824 0%, #f26843 100%);
 	box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
@@ -324,7 +323,6 @@ body .slider-input {
 	border: none;
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
-	outline: none;
 }
 .user-block input:hover {
 	border: 2px solid #c7c6c5;
@@ -1355,14 +1353,12 @@ margin-top: 38px;
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
 	border-radius: 5px;
-	outline: none;
 	background-color: white;
 }
 .mailout-form input:hover {
 	border: 2px solid #c7c6c5;
 	outline: none;
 }
-
 .mailout-form input:focus {
 	border: 2px solid #8fbdec;
 	outline: none;
@@ -1580,7 +1576,6 @@ margin-top: 38px;
 	border: none;
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
-	outline: none;
 }
 .feedback-modal-wrapper textarea {
 	position: relative;
@@ -1603,7 +1598,6 @@ margin-top: 38px;
 	color: #323232;
 	border: 1px solid rgba(178, 178, 178, 0.52);
 	border-radius: 5px;
-	outline: none;
 	background-color: white;
 }
 .feedback-modal-wrapper input:hover,
