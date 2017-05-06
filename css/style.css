@@ -988,6 +988,8 @@ body .slider-input {
 	min-height: 228px;
 	padding-top: 15px;
 	padding-left: 19px;
+	padding-right: 21.5px;
+	padding-bottom: 21px;
 
 	color: white;
 	border-radius: 15px;
@@ -1009,9 +1011,9 @@ body .slider-input {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 22px;
+	margin-bottom: 5px;
 }
 .offer-left {
-	position: relative;
 
 	float: left;
 
@@ -1019,17 +1021,13 @@ body .slider-input {
 	background-image: url(../img/bg-raspberry.jpg);
 }
 .offer-btn {
-	position: absolute;
-	right: 21px;
-	bottom: 26px;
-
+float: right;
+margin-top: 38px;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
 }
 .offer-right {
-	position: relative;
-
 	float: right;
 
 	background-color: #492817;
