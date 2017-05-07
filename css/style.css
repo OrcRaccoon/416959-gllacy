@@ -477,11 +477,9 @@ body .slider-input {
 	background-color: white;
 	background-position: 50% 50%;
 }
-
 .user-block-item-search:hover .search-form-wrap {
 	display: block;
 }
-
 /*Вход*/
 .user-block-item-login {
 	position: relative;
@@ -588,7 +586,6 @@ body .slider-input {
 	font-weight: 700;
 	line-height: 24px;
 }
-
 .login-form a {
 	display: inline-block;
 	vertical-align: top;
@@ -1090,6 +1087,7 @@ body .slider-input {
 	position: relative;
 	z-index: 97;
 }
+/*Для дополнительных рядов*/
 .catalog-item:nth-child(n+11):nth-child(-n+20) {
 	position: relative;
 	z-index: 96;
@@ -1280,7 +1278,6 @@ body .slider-input {
 .advantages-item .temperature:before {
 	background-position: -58px -163px;
 }
-
 .additional-options {
 	margin-bottom: 39px;
 }
@@ -2002,7 +1999,6 @@ body .slider-input {
 	line-height: 18px;
 }
 /*footer ends*/
-
 /*catalog.html*/
 .catalog-page-wrapper {
 	min-width: 1200px;
@@ -2114,7 +2110,6 @@ body .slider-input {
 
 	font-size: 0;
 }
-
 .filter-item {
 	display: inline-block;
 	vertical-align: top;
@@ -2190,7 +2185,6 @@ body .slider-input {
 .filter-popular-width select::-ms-expand {
 	display: none;
 }
-
 .filter-popular-width:after {
 	position: absolute;
 	z-index: 10;
@@ -2317,7 +2311,6 @@ body .slider-input {
 .filter-fat-width-input:disabled + label:hover:before {
 	background-position: -42px -500px;
 }
-
 .filter-extra-width {
 	box-sizing: border-box;
 	width: 702px;
